@@ -1,0 +1,25 @@
+<section class="login" id="login">
+
+  <h1 class="heading"> <span>Login</span> Form </h1>
+
+  <form [formGroup]="loginForm" (ngSubmit)="saving(loginForm.value)">
+      <div class="inputBox" [class.has-error]="userid?.invalid">
+          <input type="text" placeholder="user id" formControlName="userid" required>
+          <div class="validator">
+              <span class="text-danger"
+                  *ngIf="loginForm.controls['userid'].touched && loginForm.hasError('required','userid')">
+                  *userid is required</span>
+          </div>
+      </div><br>
+      <div class="inputBox" [class.has-error]="password?.invalid">
+          <input type="password" placeholder="user password" formControlName="password" required>
+          <div class="validator">
+              <span class="text-danger"
+                  *ngIf="loginForm.controls['password'].touched && loginForm.hasError('required','password')">
+                  *password is required</span>
+          </div>
+      </div>
+     <div><input type="submit" value=" Click! Login" class="btn"></div>
+  </form>
+
+</section>

@@ -1,0 +1,89 @@
+<!-- 
+  <section class="contact">
+    <div class="content">
+      <h2>GET <span>PROP</span></h2>
+    </div>
+    <div class="container">
+      <div class="contactinfo">
+      <div class="box">
+        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div class="text">
+          <h3>ADDRESS</h3><br>
+          <p>14/16,Naren Garden,PSG layout ,<br>Kalapatti Road ,<br>Coimbatore-641048</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+        <div class="text">
+          <h3>PHONE</h3><br>
+          <p>9566577069</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+        <div class="text">
+          <h3>EMAIL</h3><br>
+          <p>getprop@gmail.com</p>
+        </div>
+      </div>
+      </div>
+      <div class="contactform">
+        <form>
+          <h2>ASK OUT</h2>
+          <div class="inputbox">
+            <input type="text" name="" required="required">
+            <span>FULL NAME</span>
+          </div>
+          <div class="inputbox">
+            <input type="text" name="" required="required">
+            <span>EMAIL</span>
+          </div><div class="inputbox">
+            <textarea required="required"></textarea>
+            <span>Type Your Message....</span>
+          </div>
+          <div class="inputbox">
+            <input type="submit" name="" value="SEND">
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section> -->
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <form [formGroup]="contactform" (ngSubmit)="saving(this.contactform.value)">
+            <div class="form-group">
+                <label for="name" class='name'></label>
+                <input type="text" placeholder="Enter your name" formControlName="name">
+                <span class="text-danger" *ngIf="contactform.controls.name.errors && contactform.controls.name.touched"><br>Field cant be empty</span>
+              </div>
+ <div class="form-group">
+            <label for="email" class='mail'></label>
+            <input type="email" placeholder="Email Address" formControlName="email">
+            <span class="text-danger" *ngIf="contactform.controls.email.errors && contactform.controls.email.touched"><br>Invalid Email Address</span>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class='message'></label>
+            <input type="textarea" placeholder="Ask Your Queries" formControlName="message">
+            <span class="text-danger" *ngIf="contactform.controls.message.errors && contactform.controls.message.touched"><br>Field cant be empty</span>
+          </div>
+
+          
+          <div class="text-center">
+            <button id="submitButton" type="submit" class="btn btn-primary" >SUBMIT</button>
+          </div>
+         
+          <!-- <div class="text-center text-success" *ngIf="successMessage">{{successMessage}}</div> -->
+          
+        </form>
+      </div>
+      <!-- <div class="img">
+        <img src="../../assets/signupp.jpg">
+      </div>
+     -->
+    </div>
+  </div>

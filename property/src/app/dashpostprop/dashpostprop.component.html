@@ -1,0 +1,29 @@
+ <!-- <p>dashpostprop works!</p> -->
+ <div>
+  <table id="post">
+    <thead>
+    <th>NAME</th>
+    <th>MAIL ID</th>
+    <th>CONTACT</th>
+    <th>ADDRESS OF PROP</th>
+    <th>LANDMARK</th>
+    <th>RENT</th>
+    <th>DESCRIPTION</th>
+    <th>ATTACHMENTS</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of alluserData">
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.phone}}</td>
+      <td>{{user.address}}</td>
+      <td>{{user.landmark}}</td>
+      <td>{{user.rent}}</td>
+      <td>{{user.description}}</td>
+      <td>{{user.upload}}</td>
+      <td><img src="../../assets/{{user.upload}}"></td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+

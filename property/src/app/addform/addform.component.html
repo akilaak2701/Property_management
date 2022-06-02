@@ -1,0 +1,28 @@
+<!-- <div class="container mt-5">
+    <div class="card  mx-auto">
+        <div class="card-header text-center">
+            <h1 class="text-dark">BOOK-UP</h1>
+        </div>
+        <div class="card-body">
+            <form [formGroup]="areabook" (ngSubmit)="areaBookform(this.areabook.value)">
+                    <label for="areaname" class="text-dark"> Area Name :</label>
+                    <input type="text" formControlName="areaname" class="form-control" placeholder="Enter Area Name">
+                    <span class="text-danger"
+                        *ngIf="areabook.controls['areaname'].touched && areabook.hasError('required','areaname')">*Areaname is required </span>
+                
+                <div class="form-group">
+                    <label for="description" class="text-dark">DESCRIPTION</label>
+                    <input type="textarea" formControlName="description" class="form-control" placeholder="Description">
+                    <span class="text-danger"
+                        *ngIf="areabook.controls['description'].touched && areabook.hasError('required','description')">*description
+                         is required </span>
+                </div>
+                <div class="button text-center">
+                    <button type="submit" class="btn btn-success" >Register</button>
+
+                    
+
+                    <p class="mt-3">Already Have account?<a routerLink='/login' class="text-danger">Login</a> </p>
+                </div>
+            </form>
+            <button (click)='findarea(this.areabook.value)'>get</button> -->

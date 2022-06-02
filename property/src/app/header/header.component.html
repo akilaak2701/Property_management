@@ -1,0 +1,31 @@
+<!-- <p>header works!</p> -->
+ 
+    <header>
+        <div class="header-inner">
+          <h2 class="logo">GET<span><br>PROP</span></h2>
+          <div class="search-container">
+            <form action="/action_page.php">
+              <input type="search" placeholder="Enter Locality/Landmark" name="search"  [(ngModel)]="searchTerm" (keyup)="search($event)">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form></div>
+          <i id="bars" class="fas fa-bars bars"></i>
+          <nav class="nav-menu">
+            <a routerLink="lists" class="nav-link">HOME</a>
+            <a routerLink="selectprop" class="nav-link">BUY PROP</a>
+
+            <!-- <a routerLink="service2" class="nav-link">GET HELP</a> -->
+            <!-- <a routerLlink="services" class="nav-link">SERVICES</a> -->
+            <a routerLink="postprop" class="nav-link" >POST PROP</a>
+            <!-- <a routerLink="signup" class="nav-signup" >SIGN UP</a> -->
+            <a routerLink="aboutus" class="nav-link" >ABOUT</a>
+
+            <a routerLink="signup" class="nav-signup" >REGISTER</a>
+            <a routerLink="admin" class="nav-signup">ADMIN</a>
+            
+          </nav>
+          
+        </div>
+      </header>
+      <!-- <router-outlet></router-outlet> -->
+
+ 

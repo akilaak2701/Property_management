@@ -1,0 +1,101 @@
+/* input{
+    border:none;
+    background-color: rgba(255,255,255,0);
+    border-bottom:solid black;
+    size:3px;
+    margin-left: 10px;
+    width: 85%;
+  }
+  
+  label{
+    color: grey;
+  }
+  .form-group ,
+  .input-field{
+    margin-top:30px;
+  }
+  form{
+    padding:12px;
+  }
+  
+  #submitButton{
+    margin: 25px;
+    width: 40%;
+  }
+  #Container{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(251,194,235,1), rgba(179,202,243,1));
+  }
+  
+  #cardStyle{
+    background-color: rgb(255,255,255,0.4);
+    box-shadow: 5px 3px 10px 5px gray;
+  }
+  .container-fluid {
+    margin-left: 341px;
+    margin-top: 100px;
+    width: 500px;
+    border: 2px solid silver;
+    background-color: lightgrey;
+     margin-bottom:120px; 
+    
+  }
+   */
+
+   
+.form-group {
+  width: 60%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 28px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid goldenrod;
+  margin-left: 270px;
+  
+}
+input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  width: 200px;
+  float: left;
+  margin: 0 10px;
+}
+
+.form-group label {
+  width: 26px;
+  float: left;
+  text-align: left;
+}
+.btn {
+ 
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    /* margin-left: -30px; */
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 350px;
+    background-color:goldenrod;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.text-success {
+  color:black;
+}
+.row{
+  display: flex;
+}
+.img img{
+  padding-top: 70px;
+  width: 550px;
+  height: 300px;
+  /* padding-right: -10px; */
+}

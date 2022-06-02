@@ -1,0 +1,17 @@
+
+
+        <div class="grid">
+      <ng-container *ngFor="let item of propertyList | filter:searchKey:'address'">
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="{{item.upload}}" alt="Rome" />
+          <div class="card-content">
+            <h6 class="card-header">{{item.address}}</h6>
+            <p class="card-text">
+            {{item.description}}
+            </p>
+            <a href="login" class="house1">GET CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </ng-container>
