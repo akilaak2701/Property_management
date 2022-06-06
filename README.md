@@ -1,9 +1,7 @@
-# Title
-Property Management System
+# Property Management System
+
 
 # Description
-
-Property Management System :
 
 Property management is the supervision of residential, commercial, and industrial properties, including apartments, detached houses, condominium units, and shopping centres. It typically involves administering property owned by another party or entity. On behalf of the lender, the property manager works to protect the integrity of the property while producing revenue.
 
