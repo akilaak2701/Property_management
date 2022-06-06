@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpResponse } from '@angular/common/http';
+import {  HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {  tap } from 'rxjs/operators';
 import { ToastrService } from 'ngx-toastr';
@@ -14,7 +14,7 @@ export class HttpCallInterceptor implements HttpInterceptor {
     return next.handle(request).pipe(
       tap(evt => {
         console.log(evt)
-      }, err => {
+      }, _err => {
         
       })
     )
