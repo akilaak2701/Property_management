@@ -193,7 +193,6 @@ background-color:goldenrod;
 }
 
 
-/**/
 .cards {
   margin: 0 auto;
   max-width: 1000px;
@@ -328,61 +327,6 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-@media (min-width: 700px) {
-  .container {
-    max-width: 960px;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: row-reverse;
-    min-height: 40vh;
-  }
-
-  .row {
-    width: 50%;
-  }
-
-  .hero__title {
-    padding-top: 2rem;
-  }
-
-  .col__three {
-    display: flex;
-    width: 85%;
-    justify-content: space-around;
-    text-align: left;
-    padding-top: 4rem;
-  }
-
-  .stat__group {
-    margin-left: 3rem;
-    width: 100%;
-  }
-
-  .hero__img {
-    height: 100%;
-    background-image: url("../../assets/cover.jpg");
-    background-position: top;
-    border-radius: 0 8px 8px 0;
-  }
-
-  .card {
-    border-radius: 8px 0 0 8px;
-  }
-
-  .hero__title {
-    text-align: left;
-    font-size: 2rem;
-  }
-
-  .hero__text {
-    text-align: left;
-    width: 90%;
-    margin: 1.3em 0 0 0;
-  }
 }
 
 /* css for filter */
