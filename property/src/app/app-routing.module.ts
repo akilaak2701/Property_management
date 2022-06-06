@@ -27,7 +27,6 @@ import { DashpostpropComponent } from './dashpostprop/dashpostprop.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashqueriesComponent } from './dashqueries/dashqueries.component';
 import { BuytypeofpropComponent } from './buytypeofprop/buytypeofprop.component';
-import { AdminComponent } from './admin/admin.component';
 import { LoginformComponent } from './loginform/loginform.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
