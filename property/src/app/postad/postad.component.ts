@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormBuilder, Validators, NgForm } from '@angular/forms';
+import { FormGroup,FormBuilder} from '@angular/forms';
 import { ApiserviceService } from '../apiservice.service';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
@@ -128,14 +128,14 @@ this.api.get("propertydb").subscribe((res: any) => {
     console.log(this.alluserData[array])
   }
  
-}, (rej: any) => {
+}, (_rej: any) => {
 });
 
 this.api.getDocsByID("propertydb","ecb83221a3496d8815d5c195441742ac").subscribe((res: any) => {
-   var temp=res;
+   const temp=res;
    console.log(temp);
    this.empRecord.reset();
- },(rej: any)=>{
+ },(_rej: any)=>{
  });
 
 }

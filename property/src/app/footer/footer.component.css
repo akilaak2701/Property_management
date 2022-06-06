@@ -70,7 +70,7 @@ footer {
     width: 35%;
   }
   
-  .footer-distributed .footer-center i {
+  .footer-distributed .footer-center em {
     background-color: #222;
     color: #ffffff;
     font-size: 25px;
@@ -83,7 +83,7 @@ footer {
     vertical-align: middle;
   }
   
-  .footer-distributed .footer-center i.fa-envelope {
+  .footer-distributed .footer-center em.fa-envelope {
     font-size: 17px;
     line-height: 38px;
   }

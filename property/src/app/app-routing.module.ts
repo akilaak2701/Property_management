@@ -5,7 +5,6 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { PostadComponent } from './postad/postad.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
-import { TestingComponent } from './testing/testing.component';
 import { RentalapplicationComponent } from './rentalapplication/rentalapplication.component';
 import { House1Component } from './house1/house1.component';
 import { House2Component } from './house2/house2.component';

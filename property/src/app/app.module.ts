@@ -7,7 +7,6 @@ import { ListsComponent } from './lists/lists.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { PostadComponent } from './postad/postad.component';
-import { TestingComponent } from './testing/testing.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import{ HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -24,7 +23,6 @@ import { House6Component } from './house6/house6.component';
 import { House7Component } from './house7/house7.component';
 import { House8Component } from './house8/house8.component';
 import { House9Component } from './house9/house9.component';
-import { TestComponent } from './test/test.component';
 import { CommercialComponent } from './commercial/commercial.component';
 import { LandComponent } from './land/land.component';
 import { Land1Component } from './land1/land1.component';
@@ -63,7 +61,6 @@ import { LoginComponent } from './login/login.component';
     ContactComponent,
     AboutusComponent,
     PostadComponent,
-    TestingComponent,
     HeaderComponent,
     FooterComponent,
     ServicesComponent,
@@ -79,7 +76,6 @@ import { LoginComponent } from './login/login.component';
     House8Component,
     House9Component,
  
-    TestComponent,
     CommercialComponent,
     LandComponent,
     Land1Component,

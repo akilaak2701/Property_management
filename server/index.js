@@ -13,7 +13,7 @@ app.use(
 app.use(bodyParser.json());
 
 app.post("/postdata2", function (req, res) {
-  var objectnew2 = {
+  const objectnew2 = {
     userid: req.body.userid,
     password: req.body.password,
     type:"login"
@@ -32,46 +32,9 @@ app.post("/postdata2", function (req, res) {
 });
 
 
-// app.post('/signup', function (req, _res) {
-//   const signupobject = {
-//     fullname: req.body.fullname,
-//     username: req.body.username,
-//     email: req.body.email,
-//     password: req.body.password,
-//     confirmPassword: req.body.confirmPassword,
-//     acceptTerms: req.body.acceptTerms,
-//     type: 'signup',
-//   };
-
-//   console.log('data from angular', signupobject);
-//   dbconnection.pandemic.insert(signupobject).then((data) => {
-//     console.log('data inserted successfully ', data);
-//   });
-// });
-
-// app.get('/getdata/:id', (req, res) => {
-//   console.log('email:', req.params.id);
-//   console.log('password:', req.params.id);
-//   const object = {
-//     selector: {
-//       email: req.params.id,
-//       type: 'signup',
-//     },
-//   };
-
-//   dbconnection.pandemic
-//     .find(object)
-//     .then((data) => {
-//       console.log('data fetch from db', data);
-//       res.send(data);
-//     })
-//     .catch((err) => {
-//       console.log('error', err);
-//     });
-// });
 
 app.post("/signup", function(request,response){
-   var object = {
+   const object = {
    
     email: request.body.email,
     Password: request.body.password,
@@ -89,7 +52,7 @@ app.post("/signup", function(request,response){
   
   app.get('/getlogin/:id',(req,res)=>{
    console.log("email:",req.params.id);
-   var object = {
+   const object = {
      selector:{
        email:req.params.id,
        type :"login"
@@ -109,7 +72,7 @@ app.post("/signup", function(request,response){
  
     app.get('/getadminlogin/:id',(req,res)=>{
    console.log("userid:",req.params.id);
-   var object1 = {
+   const object1 = {
      selector:{
       userid:req.params.id,
        type :"admin"
