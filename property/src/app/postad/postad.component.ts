@@ -129,6 +129,8 @@ this.api.get("propertydb").subscribe((res: any) => {
   }
  
 }, (_rej: any) => {
+  console.log("sonar");
+
 });
 
 this.api.getDocsByID("propertydb","ecb83221a3496d8815d5c195441742ac").subscribe((res: any) => {
@@ -136,6 +138,7 @@ this.api.getDocsByID("propertydb","ecb83221a3496d8815d5c195441742ac").subscribe(
    console.log(temp);
    this.empRecord.reset();
  },(_rej: any)=>{
+   console.log("sonar");
  });
 
 }

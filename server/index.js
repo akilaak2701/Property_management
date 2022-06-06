@@ -33,7 +33,7 @@ app.post("/postdata2", function (req, res) {
 
 
 
-app.post("/signup", function(request,response){
+app.post("/signup", function(request,_response){
    const object = {
    
     email: request.body.email,
