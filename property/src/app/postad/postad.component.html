@@ -35,22 +35,20 @@
             <span class="text-danger" *ngIf="postform.controls.address.errors && postform.controls.address.touched"><br>Enter your Current Address</span>
           </div>
         
-        
-          <div class="text-center">
-            <button id="submitButton" type="submit" class="btn btn-primary" >POST</button>
+          <div class="form-group">
+            <label for="landmark" class='landmark'></label>
+            <em class="fa fa-location-arrow"></em>
+            <input type="text" placeholder="Nearest Landmark" formControlName="landmark">
+            <span class="text-danger" *ngIf="postform.controls.landmark.errors && postform.controls.landmark.touched"><br>Specify your Problem</span>
           </div>
+        
          
           
         </form>
       </div>
        <div class="img">
         
-          <div class="form-group-f1">
-            <label for="landmark" class='landmark'></label>
-            <em class="fa fa-location-arrow"></em>
-            <input type="text" placeholder="Nearest Landmark" formControlName="landmark">
-            <span class="text-danger" *ngIf="postform.controls.landmark.errors && postform.controls.landmark.touched"><br>Specify your Problem</span>
-          </div>
+         
           <div class="form-group-f1">
             <label for="typeofprop" class='typeofprop'></label>
             <em class="fa fa-building"></em>
@@ -74,12 +72,14 @@
           </div>
           <div class="form-group-f1">
             <label for="fileUpload"></label>
-            <em class="fa fa-picture-o"></em>
+            <em class="fa fa-cloud-upload"></em>
 
             <input type="text" id="fileUpload"  placeholder="Add image" formControlName="upload">
           
           </div>
-
+          <div class="text-center">
+            <button id="submitButton" type="submit" class="btn btn-primary" >POST</button>
+          </div>
       </div> 
     
     </div>

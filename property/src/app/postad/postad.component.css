@@ -3,26 +3,19 @@ h3{
   font-size: 30px;
 }
    
-   .form-group{
-    width: 60%;
+   .form-group , 
+   .form-group-f1{
+    width: 80%;
     overflow: hidden;
     font-size: 20px;
-    padding: 28px 20px;
+    padding: 28px 0px;
     margin: 8px 0;
     border-bottom: 1px solid goldenrod;
-    margin-left: 150px;
+    margin-left: 130px;
     display: flex;
     
   }
-  .form-group-f1{
-    width: 100%;
-    overflow: hidden;
-    font-size: 20px;
-    padding: 28px 0;
-    margin: 8px 0;
-    border-bottom: 1px solid goldenrod;
-    margin-left: 270px;
-  }
+ 
   input {
     border: none;
     outline: none;
@@ -44,13 +37,13 @@ h3{
       align-items: center;
       justify-content: center;
       height: 45px;
-      max-width: 200px;
+      max-width: 150px;
       width: 100%;
       border: none;
       outline: none;
       color: #fff;
       border-radius: 5px;
-      margin: 25px 265px;
+      margin: 50px 265px;
       background-color:goldenrod;
       transition: all 0.3s linear;
       cursor: pointer;

@@ -7,7 +7,7 @@
                 <input type="text" placeholder="Enter your name" formControlName="name">
                 <span class="text-danger" *ngIf="contactform.controls.name.errors && contactform.controls.name.touched"><br>Field cant be empty</span>
               </div>
- <div class="form-group">
+          <div class="form-group">
             <label for="email" class='mail'></label>
             <input type="email" placeholder="Email Address" formControlName="email">
             <span class="text-danger" *ngIf="contactform.controls.email.errors && contactform.controls.email.touched"><br>Invalid Email Address</span>
@@ -26,6 +26,9 @@
          
           
         </form>
+        <div class="image">
+          <img src="../../assets/customer.jpg" alt="customer">
+        </div>
       </div>
     
     </div>
