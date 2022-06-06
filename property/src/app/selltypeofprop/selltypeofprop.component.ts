@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelltypeofpropComponent implements OnInit {
 
-  constructor() { }
+  constructor() { console.log("property");
+}
 
   ngOnInit(): void {
   }

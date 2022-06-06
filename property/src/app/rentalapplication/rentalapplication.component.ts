@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder, Validators } from '@angular/forms';
-// import component{}
 
  
 @Component({
@@ -17,13 +16,11 @@ export class RentalapplicationComponent implements OnInit {
   this.applicationform = this.fb.group({
     name:['',[Validators.required]],
    email:['',[Validators.required, Validators.pattern("[A-Za-z0-9]*@gmail.com")]],
-  //  password:['',[Validators.required,Validators.pattern("[A-Za-z0-9@!_]{6,}")]],
   age:['',[Validators.required]],
   phone:['',[Validators.required]],
   tenant:['',[Validators.required]],
   address:['',[Validators.required]],
   occupation:['',[Validators.required]],
-  // tenant:['',[Validators.required]],
   annualincome:['',[Validators.required]],
   gender:['',[Validators.required]],
   marital:['',[Validators.required]],

@@ -3,18 +3,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import { HttpClientModule } from '@angular/common/http';
 import { ListsComponent } from './lists/lists.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-// import { ServiceComponent } from './service/service.component';
-// import { ServicesComponent } from './services/services.component';
 import { PostadComponent } from './postad/postad.component';
 import { TestingComponent } from './testing/testing.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-// import { NodetestComponent } from './nodetest/nodetest.component';
-// import { HomeComponent } from './home/home.component';
 import{ HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { ServicesComponent } from './services/services.component';
@@ -29,10 +24,7 @@ import { House6Component } from './house6/house6.component';
 import { House7Component } from './house7/house7.component';
 import { House8Component } from './house8/house8.component';
 import { House9Component } from './house9/house9.component';
-import { Services2Component } from './services2/services2.component';
-import { ServiceformComponent } from './serviceform/serviceform.component';
 import { TestComponent } from './test/test.component';
-import { RentalComponent } from './rental/rental.component';
 import { CommercialComponent } from './commercial/commercial.component';
 import { LandComponent } from './land/land.component';
 import { Land1Component } from './land1/land1.component';
@@ -63,27 +55,13 @@ import { FilterPipe } from './filter.pipe';
 import { LoginformComponent } from './loginform/loginform.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-// const routes: Routes = [
-//   {path: '', component: ListsComponent},
-//   {path: 'signup', component: SignupComponent},
-//   {path: 'login' , component:LoginComponent},
-//   {path :'postprop' , component:PostadComponent},
-//   {path : 'contact' , component:ContactComponent},
-//   {path : 'about' , component:AboutusComponent},
-//   {path : 'services' , component:ServiceComponent}
 
-// ]
-// const routes: Routes = [
-//   {path:'maintanence',component:MaintanenceReqComponent},
-// ]
 @NgModule({
   declarations: [
     AppComponent,
-    // HomeComponentComponent,
     ListsComponent,
     ContactComponent,
     AboutusComponent,
-    // ServicesComponent,
     PostadComponent,
     TestingComponent,
     HeaderComponent,
@@ -100,10 +78,8 @@ import { LoginComponent } from './login/login.component';
     House7Component,
     House8Component,
     House9Component,
-    Services2Component,
-    ServiceformComponent,
+ 
     TestComponent,
-    RentalComponent,
     CommercialComponent,
     LandComponent,
     Land1Component,
@@ -130,17 +106,15 @@ import { LoginComponent } from './login/login.component';
     RegisterComponent,
     LoginComponent,
     
-    // AdminLoginComponent,
-    // ChatappComponent,
-    // NodetestComponent
+  
   ],
   imports: [
     BrowserModule,FormsModule,ReactiveFormsModule,
     AppRoutingModule,HttpClientModule,
     CommonModule,
-    BrowserAnimationsModule, // required animations module
+    BrowserAnimationsModule, 
     ToastrModule.forRoot(),
-    // ToastrModule.forRoot(),
+  
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

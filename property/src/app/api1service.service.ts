@@ -45,16 +45,6 @@ export class Api1serviceService {
 
  }
 
-//   add(formobject:any){
-//     return this.http.post("http://localhost:8000/signup",formobject)
 
-// }
-// test_get(id:any)
-// {
-//   return this.http.get<any>('http://localhost:8000/getdata/'+id);
-// }
-  // getdata(userid: any) {
-  //   return this.http.get(`http://localhost:8000/get_all_query/${userid}`);
-  // }
  
 }

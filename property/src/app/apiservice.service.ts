@@ -33,12 +33,10 @@ export class ApiserviceService {
     })
   };
   add(db: string, doc: object): Observable<{}> {
-    // const url2 = `${this.url}${db}`;
     const url = this.url + db;
     return this.http.post(url, doc, this.httpOptions)
   }
   get(data:any): Observable<{}> {
-    // const url = this.url + db + '/_all_docs?include_docs=true';
     const url = this.url + 'propertydb/_find';
     return this.http.post(url,data, this.httpOptions)
 
@@ -49,7 +47,6 @@ export class ApiserviceService {
   }
   
   findsearch(selectorObject: any, dataBase: string) {
-      // const url = this.url+ dataBase + '/_find'
       const url = `${this.url + dataBase}/_find`
       const dataObject = {
        selector: selectorObject
