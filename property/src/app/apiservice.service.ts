@@ -6,13 +6,13 @@ import { HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiserviceService {
-  checkuserlogin(email: any, password: any) {
+  checkuserlogin(_email: any, _password: any) {
     throw new Error('Method not implemented.');
   }
   public propertyList = new BehaviorSubject<any>([]);
   public search = new BehaviorSubject<string>("");
 
-  array(alluserData: any) {
+  array(_alluserData: any) {
     throw new Error('Method not implemented.');
   }
   getProducts(){

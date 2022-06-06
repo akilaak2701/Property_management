@@ -5,11 +5,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class Api1serviceService {
-  test_get(Email: any) {
+  test_get(_Email: any) {
     throw new Error('Method not implemented.');
   }
   
-  add(arg0: string, login: { userid: any; password: any; type: string; }) {
+  add(_arg0: string, _login: { userid: any; password: any; type: string; }) {
     throw new Error('Method not implemented.');
   }
   
