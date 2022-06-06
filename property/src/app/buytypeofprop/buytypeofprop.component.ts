@@ -11,6 +11,9 @@ export class BuytypeofpropComponent implements OnInit {
 }
 
   ngOnInit(): void {
+    console.log("sonar");
+
   }
+  
 
 }

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder, Validators, NgForm } from '@angular/forms';
 import { ApiserviceService } from '../apiservice.service';
 import { Router } from '@angular/router';
-// import { ToastrService } from 'ngx-toastr';
 import { ToastrService } from 'ngx-toastr';
 
 
@@ -62,18 +61,14 @@ saving(Formvalue: any) {
  type:"contact",
  createdBy:d
   }
-  //angular to couch POST
  this.api.add("propertydb", contact).subscribe((res: any) => {
   console.log(res);
-  // alert("Your property booked successfully!");
   console.log('akila')
   this.contactform.reset();
 }, (rej: any) => {
   this.toastr.error(rej.error.reason);
 
-  // alert("opps! Can not post data" + rej);
 });
-//get the all data
 this.api.get("propertydb").subscribe((res: any) => {
   this.router.navigate(['dashpost'])
   this.alluser=res;
@@ -85,21 +80,15 @@ this.api.get("propertydb").subscribe((res: any) => {
     console.log(this.alluserData[array])
   }
   this.toastr.success("data posted","success");
-    // alert("Your data was get successfully!");
-  // this.empRecord.reset();
+  
 }, (rej: any) => {
 
-  // alert("opps! Can not post data" + rej);
 });
-// get the data by using particular id
 this.api.getDocsByID("propertydb","ecb83221a3496d8815d5c195441742ac").subscribe((res: any) => {
-  //  console.log(res);
    var temp=res;
    console.log(temp);
-  //  alert("One ID got from database");
    this.empRecord.reset();
  },(rej: any)=>{
-  //  alert("404"+rej);
  });
 
 }

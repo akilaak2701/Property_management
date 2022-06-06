@@ -20,7 +20,9 @@ this.saving()
   
  }
 
- ngOnInit(): void {}
+ ngOnInit(): void {
+   console.log("sonar");
+ }
    
  saving() {
   
@@ -38,7 +40,6 @@ let data={
 
 
 
-//get the all data
 this.api.get(data).subscribe((res: any) => {
   this.alluser=res;
   console.log(res);

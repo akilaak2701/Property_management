@@ -12,6 +12,8 @@ export class AboutusComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    console.log("sonar");
+
   }
 
 }

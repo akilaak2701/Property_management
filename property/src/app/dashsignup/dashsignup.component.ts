@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashsignupComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+console.log("sonar");
+   }
 
   ngOnInit(): void {
+    console.log("sonar");
   }
 
 }

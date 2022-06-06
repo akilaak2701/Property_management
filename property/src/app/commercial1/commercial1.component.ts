@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Commercial1Component implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    console.log("sonar");
+  }
 
   ngOnInit(): void {
+    console.log("sonar");
+
   }
 
 }

@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder,Validators} from '@angular/forms';
-// import { SignupFormService} from '../signup-form.service';
 import { Api1serviceService } from '../api1service.service';
 import { HttpClient} from '@angular/common/http';
 import { Router } from '@angular/router';
-// import { PickupService } from '../pickup.service';
 
 
 @Component({
@@ -15,7 +13,6 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   loginForm!: FormGroup; 
-  // header: any;
   constructor(private fb:FormBuilder,private signup:Api1serviceService,private router:Router, private http:HttpClient) { }
 
   ngOnInit(): void {
@@ -33,7 +30,6 @@ export class LoginComponent implements OnInit {
       console.log("data returned from server",data);
       
        if(data.docs[0].email == Formvalue.email){
-        // this.header.showoff();
       this.router.navigate(['/lists']);
 
       alert("data verified");

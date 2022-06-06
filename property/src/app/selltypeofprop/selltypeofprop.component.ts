@@ -10,7 +10,7 @@ export class SelltypeofpropComponent implements OnInit {
   constructor() { console.log("property");
 }
 
-  ngOnInit(): void {
+  ngOnInit(): void {console.log("property");
   }
 
 }

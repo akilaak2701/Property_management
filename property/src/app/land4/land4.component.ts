@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Land4Component implements OnInit {
 
-  constructor() { }
+  constructor() {console.log("sonar"); }
 
-  ngOnInit(): void {
+  ngOnInit(): void {console.log("sonar");
   }
 
 }

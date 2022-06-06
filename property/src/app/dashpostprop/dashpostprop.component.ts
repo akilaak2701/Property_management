@@ -20,7 +20,9 @@ this.saving()
  
 }
 
-ngOnInit(): void {}
+ngOnInit(): void {
+  console.log("sonar");
+}
   
 saving() {
  

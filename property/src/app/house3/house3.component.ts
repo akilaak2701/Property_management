@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class House3Component implements OnInit {
 
-  constructor() { }
+  constructor() {
+    console.log("sonar");
+   }
 
   ngOnInit(): void {
+    console.log("sonar");
   }
 
 }
