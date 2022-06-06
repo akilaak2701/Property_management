@@ -1,21 +1,27 @@
-<!-- <p>rentalapplication works!</p> -->
+<h3>POST YOUR PROP AT SIMPLE STEPS</h3>
 <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <form [formGroup]="postform" (ngSubmit)="saving(this.postform.value)">
             <div class="form-group">
                 <label for="name" class='name'></label>
+          <em class="fa fa-user"></em>
+
                 <input type="text" placeholder="Enter your name" formControlName="name">
                 <span class="text-danger" *ngIf="postform.controls.name.errors && postform.controls.name.touched"><br>Field cant be empty</span>
               </div>
  <div class="form-group">
             <label for="email" class='mail'></label>
+          <em class="fa fa-envelope"></em>
+
             <input type="email" placeholder="Email Address" formControlName="email">
             <span class="text-danger" *ngIf="postform.controls.email.errors && postform.controls.email.touched"><br>Invalid Email Address</span>
           </div>
 
           <div class="form-group">
             <label for="phone" class='phone'></label>
+          <em class="fa fa-phone"></em>
+
             <input type="number" placeholder="Contact number" formControlName="phone">
             <span class="text-danger" *ngIf="postform.controls.phone.errors && postform.controls.phone.touched"><br>Field cant be empty</span>
           </div>
@@ -23,48 +29,58 @@
           
           <div class="form-group">
             <label for="addressform" class='address'></label>
+          <em class="fa fa-map-marker"></em>
+
             <input type="text" placeholder="Address of the property" formControlName="address">
             <span class="text-danger" *ngIf="postform.controls.address.errors && postform.controls.address.touched"><br>Enter your Current Address</span>
           </div>
         
-
-          <div class="form-group-f1">
-            <label for="landmark" class='landmark'></label>
-            <input type="text" placeholder="Nearest Landmark" formControlName="landmark">
-            <span class="text-danger" *ngIf="postform.controls.landmark.errors && postform.controls.landmark.touched"><br>Specify your Problem</span>
-          </div>
-          <div class="form-group">
-            <label for="typeofprop" class='typeofprop'></label>
-            <input type="text" placeholder="Type of the property" formControlName="typeofprop">
-            <span class="text-danger" *ngIf="postform.controls.typeofprop.errors && postform.controls.typeofprop.touched"><br>Enter your Current Address</span>
-          </div>
-          <div class="form-group-f1">
-            <label for="rent" class='rent'></label>
-            <input type="text" placeholder="Rent/month" formControlName="rent">
-            <span class="text-danger" *ngIf="postform.controls.rent.errors && postform.controls.rent.touched"><br>Enter your annual income</span>
-          </div>
-          <div class="form-group-f1">
-            <label for="description" class='description'></label>
-            <input type="text" placeholder="Description about your property" formControlName="description">
-            <span class="text-danger" *ngIf="postform.controls.description.errors && postform.controls.description.touched"><br>Enter your annual income</span>
-          </div>
-          <div class="form-group">
-            <label for="fileUpload"></label>
-            <input type="text" id="fileUpload"  placeholder="Add image" formControlName="upload">
-          
-          </div>
         
           <div class="text-center">
             <button id="submitButton" type="submit" class="btn btn-primary" >POST</button>
           </div>
          
-          <!-- <div class="text-center text-success" *ngIf="successMessage">{{successMessage}}</div> -->
           
         </form>
       </div>
-      <div class="img">
-        <img src="../../assets/signupp.jpg">
-      </div>
+       <div class="img">
+        
+          <div class="form-group-f1">
+            <label for="landmark" class='landmark'></label>
+            <em class="fa fa-location-arrow"></em>
+            <input type="text" placeholder="Nearest Landmark" formControlName="landmark">
+            <span class="text-danger" *ngIf="postform.controls.landmark.errors && postform.controls.landmark.touched"><br>Specify your Problem</span>
+          </div>
+          <div class="form-group-f1">
+            <label for="typeofprop" class='typeofprop'></label>
+            <em class="fa fa-building"></em>
+
+            <input type="text" placeholder="Type of the property" formControlName="typeofprop">
+            <span class="text-danger" *ngIf="postform.controls.typeofprop.errors && postform.controls.typeofprop.touched"><br>Enter your Current Address</span>
+          </div>
+          <div class="form-group-f1">
+            <label for="rent" class='rent'></label>
+            <em class="fa fa-money"></em>
+
+            <input type="text" placeholder="Rent/month" formControlName="rent">
+            <span class="text-danger" *ngIf="postform.controls.rent.errors && postform.controls.rent.touched"><br>Enter your annual income</span>
+          </div>
+          <div class="form-group-f1">
+            <label for="description" class='description'></label>
+            <em class="fa fa-pen"></em>
+
+            <input type="text" placeholder="Description about your property" formControlName="description">
+            <span class="text-danger" *ngIf="postform.controls.description.errors && postform.controls.description.touched"><br>Enter your annual income</span>
+          </div>
+          <div class="form-group-f1">
+            <label for="fileUpload"></label>
+            <em class="fa fa-picture-o"></em>
+
+            <input type="text" id="fileUpload"  placeholder="Add image" formControlName="upload">
+          
+          </div>
+
+      </div> 
     
     </div>
   </div>

@@ -27,7 +27,13 @@ this.saving()
 let data={
   selector:{
     type:"contact"
-  }
+  },
+  "sort": [
+    {
+       "createdBy": "desc"
+    }
+ ]
+
 }
 
 
@@ -42,8 +48,7 @@ this.api.get(data).subscribe((res: any) => {
   for (const array in this.alluserData) {
     console.log(this.alluserData[array])
   }
-  // alert("Your data was get successfully!");
-  // this.empRecord.reset();
+  
 }, (rej: any) => {
   alert("opps! Can not post data" + rej);
 });

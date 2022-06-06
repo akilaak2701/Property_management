@@ -1,0 +1,34 @@
+<h1 class="heading"> <span>ADMIN</span> LOGIN</h1>
+
+<div class="login">
+<div class="container">
+
+    <section class="login" id="login">
+
+    <form [formGroup]="loginForm" (ngSubmit)="saving(loginForm.value)">
+        <div class="inputBox" [class.has-error]="userid?.invalid">
+            <input type="text" placeholder="User ID" formControlName="userid" required>
+            <div class="validator">
+                <span class="text-danger"
+                    *ngIf="loginForm.controls['userid'].touched && loginForm.hasError('required','userid')">
+                    *userid is required</span>
+            </div>
+        </div><br>
+        <div class="inputBox" [class.has-error]="password?.invalid">
+            <input type="password" placeholder="Password" formControlName="password" required>
+            <div class="validator">
+                <span class="text-danger"
+                    *ngIf="loginForm.controls['password'].touched && loginForm.hasError('required','password')">
+                    *password is required</span>
+            </div>
+        </div>
+       <div><input type="submit" value=" Login" class="btn"></div>
+    </form>
+</section>
+
+</div>
+<div class="imgg">
+<img src="../../assets/adminlogin.jpg" alt="adminlogin">
+</div>
+</div>
+

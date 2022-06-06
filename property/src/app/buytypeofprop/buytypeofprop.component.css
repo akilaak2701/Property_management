@@ -10,7 +10,11 @@
    
     margin: 2%;
    }
-   
+   h3{
+     text-align: center;
+     font-size: 30px;
+     margin-top: 20px;
+   }
    .card{
         width: 20%;
         display: inline-block;
@@ -47,21 +51,6 @@
            border-bottom-right-radius: 5px;
      border-bottom-left-radius: 5px;
    }
-   /* button{
-     margin-top: 40px;
-     margin-bottom: 10px;
-     background-color: white;
-     border: 1px solid goldenrod;
-     border-radius: 5px;
-     padding:10px;
-   }
-   button:hover{
-     background-color: goldenrod;
-     color: white;
-     transition: .5s;
-     cursor: pointer;
-   }
-    */
     a:link, a:visited {
       background-color: white;
       color: black;
@@ -72,7 +61,3 @@
       display: inline-block;
       }
       
-      a:hover, a:active {
-      background-color:goldenrod;
-      color: white;
-      }

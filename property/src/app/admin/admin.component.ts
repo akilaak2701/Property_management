@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder,Validators} from '@angular/forms';
-import { HttpserviceService } from '../httpservice.service';
 import { Router } from '@angular/router';
+import { Api1serviceService } from '../api1service.service';
 
 
 @Component({
@@ -13,7 +13,7 @@ export class AdminComponent implements OnInit {
   loginForm!: FormGroup;
 
 
-  constructor(private fb: FormBuilder,private httpapi: HttpserviceService, private router:Router) {}
+  constructor(private api:Api1serviceService,private fb: FormBuilder, private router:Router) {}
   
   ngOnInit(): void {
    this.loginForm = this.fb.group({
@@ -31,16 +31,10 @@ export class AdminComponent implements OnInit {
   
   saving(Formvalue: any) {
   
-   const login = {
-    userid: Formvalue.userid,
-    password: Formvalue.password,
-    type: "login",
-   }
    console.log("from form", Formvalue);
-   this.httpapi.storeData2(Formvalue).subscribe((data:any) => {
+   this.api.storeData2(Formvalue).subscribe((data:any) => {
     if(data.docs.length > 0){
-     this.router.navigate(['dashboard'],{
-     })
+     this.router.navigate(['dashboard'],{})
     }
   console.log("data returned from server", data);
    })

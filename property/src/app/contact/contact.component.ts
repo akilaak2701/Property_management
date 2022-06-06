@@ -54,11 +54,13 @@ export class ContactComponent implements OnInit {
    }
 
 saving(Formvalue: any) {
+  const d = new Date();
   const contact ={
  name: Formvalue.name,
  email: Formvalue.email,
  message: Formvalue.message,
- type:"contact"
+ type:"contact",
+ createdBy:d
   }
   //angular to couch POST
  this.api.add("propertydb", contact).subscribe((res: any) => {

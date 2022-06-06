@@ -91,6 +91,7 @@ export class PostadComponent implements OnInit {
  }
 
  saving(Formvalue: any) {
+  const d = new Date();
    const property ={
   name: Formvalue.name,
   email: Formvalue.email,
@@ -102,26 +103,20 @@ export class PostadComponent implements OnInit {
   description: Formvalue.description,
   upload: Formvalue.upload,
   images:Formvalue.images,
-  type:"property"
-   }
-//   console.log("from form", Formvalue);
-//   this.api.storeData1(Formvalue).subscribe((data) => {
-//    console.log("data returned from server", data);
-//   })
-//  }
+  type:"property",
+  createdBy:d
 
-//angular to couch POST
+
+   }
+
  this.api.add("propertydb", property).subscribe((res: any) => {
   console.log(res);
-  // alert("Your property booked successfully!");
   console.log('akila')
   this.postform.reset();
 }, (rej: any) => {
         this.toastr.error(rej.error.reason);
-  // alert("opps! Can not post data" + rej);
 });
 
-//get the all data
 this.api.get("propertydb").subscribe((res: any) => {
   this.router.navigate(['dashpost'])
   this.alluser=res;
@@ -132,21 +127,15 @@ this.api.get("propertydb").subscribe((res: any) => {
   for (const array in this.alluserData) {
     console.log(this.alluserData[array])
   }
-  // alert("Your data was get successfully!");
-  // this.empRecord.reset();
+ 
 }, (rej: any) => {
-  // alert("opps! Can not post data" + rej);
 });
 
-// get the data by using particular id
 this.api.getDocsByID("propertydb","ecb83221a3496d8815d5c195441742ac").subscribe((res: any) => {
-  //  console.log(res);
    var temp=res;
    console.log(temp);
-  //  alert("One ID got from database");
    this.empRecord.reset();
  },(rej: any)=>{
-  //  alert("404"+rej);
  });
 
 }

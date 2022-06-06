@@ -6,6 +6,9 @@ import { HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiserviceService {
+  checkuserlogin(email: any, password: any) {
+    throw new Error('Method not implemented.');
+  }
   public propertyList = new BehaviorSubject<any>([]);
   public search = new BehaviorSubject<string>("");
 

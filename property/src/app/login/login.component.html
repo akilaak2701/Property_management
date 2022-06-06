@@ -1,44 +1,49 @@
-
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <form [formGroup]="loginForm">
+<section>
+    <div class="container">
+      <form [formGroup]="loginForm" (ngSubmit)="login(this.loginForm.value)">
+        <div class="form-group">
+          <em class="fa fa-envelope"></em>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            formControlName="email"
+          />
+          <span
+            class="text-danger"
+            *ngIf="
+              loginForm.controls.email.errors && loginForm.controls.email.touched
+            "
+            ><br />Invalid Email Address</span
+          >
+        </div>
   
-          <div class="form-group">
-            <label for="email" class='fa fa-envelope'></label>
-            <input type="email" placeholder="Email Address" formControlName="email">
-            <span class="text-danger" *ngIf="loginForm.controls.email.errors && loginForm.controls.email.touched"><br>Invalid Email Address</span>
-          </div>
+        <div class="form-group">
+          <em class="fa fa-lock"></em>
+          <label for="password"></label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            formControlName="password"
+          />
+          <span
+            class="text-danger"
+            *ngIf="
+              loginForm.controls.password.errors &&
+              loginForm.controls.password.touched
+            "
+            ><br />Invalid Password</span
+          >
+        </div>
   
-          <div class="form-group">
-            <label for="password" class="fa fa-lock"></label>
-            <input type="password" placeholder="Password" formControlName="password">
-            <span class="text-danger" *ngIf="loginForm.controls.password.errors && loginForm.controls.password.touched"><br>Invalid Password</span>
-          </div>
-  
-          <div class="text-center">
-            <button id="submitButton" type="submit" class="btn btn-primary" (click)="login(this.loginForm.value)">Login</button>
-          </div>
-          <!-- <div class="text-center">
-           <label for="login" class="text-dark"
-            >Don't Have a Account?
-            <a routerLink="/signup" class="text-danger">Signup</a></label
-           > -->
-          <!-- <div class="text-center text-success" *ngIf="successMessage">{{successMessage}}</div> -->
-          <div class="signup text-center">
-           <label for="signup" class="text-dark"
-            >Don't Have a Account?
-            <a routerLink="/signup" class="text-danger">Signup</a></label
-           >
-           </div>
-        </form>
-      </div>
-      <div class="img">
-        <img src="../../assets/cover2.jpg">
-      </div>
+        <div class="login-btn">
+          <p class="account">
+            Don't have an account? <span><a href="signup">SIGNUP</a></span>
+          </p>
+          <button id="submitButton" type="submit" class="btn">LOGIN</button>
+          
+        </div>
+      </form>
     </div>
-  </div>
-  
-  
-
-  
+  </section>

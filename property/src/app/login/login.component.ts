@@ -1,50 +1,49 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormBuilder,Validators} from '@angular/forms';
-import { ApiserviceService } from '../apiservice.service';
+import { FormGroup, FormBuilder,Validators} from '@angular/forms';
+// import { SignupFormService} from '../signup-form.service';
+import { Api1serviceService } from '../api1service.service';
+import { HttpClient} from '@angular/common/http';
 import { Router } from '@angular/router';
+// import { PickupService } from '../pickup.service';
+
 
 @Component({
- selector: 'app-login',
- templateUrl: './login.component.html',
- styleUrls: ['./login.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
- successMessage:string ="";
- loginForm!: FormGroup; 
-//  FormValue:any;
-  // router: any;
- constructor(private fb: FormBuilder,private api:ApiserviceService,private router:Router) { }
-ngOnInit(): void {
- this.loginForm = this.fb.group({
-  email:['',[Validators.required, Validators.pattern("[A-Za-z0-9]*@gmail.com")]],
-  password:['',[Validators.required,Validators.pattern("[A-Za-z0-9@!_]{6,}")]]
- })
-}
 
-login(Formvalue:any){
-    console.log(Formvalue.Email);
-    this.api.test_get(Formvalue.Email).subscribe((data: { [x: string]: { Email: any; }[]; docs: { Email: any; }[]; })=>{
-      console.log(data["docs"][0])
-    console.log("data returned from server",data["docs"][0].Email);
+  loginForm!: FormGroup; 
+  // header: any;
+  constructor(private fb:FormBuilder,private signup:Api1serviceService,private router:Router, private http:HttpClient) { }
 
-    if(data.docs[0].Email == Formvalue.Email){
-        alert("data verified");
-    }
-    this.api.storeData2(Formvalue).subscribe((data: { docs: string | any[]; }) => {
-      if(data.docs.length > 0){
-        this.router.navigate(['lists'],{
-        })
-      }
-     console.log("data returned from server", data);
+  ngOnInit(): void {
+    this.loginForm = this.fb.group({
+      email:['',[Validators.required, Validators.pattern("[A-Za-z0-9]*@gmail.com")]],
+      password:['',[Validators.required,Validators.pattern("[A-Za-z0-9@!_]{6,}")]],
     })
+    
+    }
+  
+  login(Formvalue:any)
+ {
+    console.log(Formvalue.email);
+    this.signup.test_get1(Formvalue.email).subscribe((data)=>{
+      console.log("data returned from server",data);
+      
+       if(data.docs[0].email == Formvalue.email){
+        // this.header.showoff();
+      this.router.navigate(['/lists']);
 
-});
-
-
-}
-
-}
-
-function saving(Formvalue: any, any: any) {
-  throw new Error('Function not implemented.');
+      alert("data verified");
+      
+      }
+      else{
+        alert("Invalid data");
+      }
+      
+    })
+    
+  }
 }

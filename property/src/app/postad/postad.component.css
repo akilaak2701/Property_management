@@ -1,13 +1,17 @@
-
+h3{
+  text-align: center;
+  font-size: 30px;
+}
    
    .form-group{
     width: 60%;
     overflow: hidden;
     font-size: 20px;
-    padding: 28px 0;
+    padding: 28px 20px;
     margin: 8px 0;
     border-bottom: 1px solid goldenrod;
-    margin-left: 270px;
+    margin-left: 150px;
+    display: flex;
     
   }
   .form-group-f1{
@@ -41,7 +45,6 @@
       justify-content: center;
       height: 45px;
       max-width: 200px;
-      /* margin-left: -30px; */
       width: 100%;
       border: none;
       outline: none;
@@ -62,5 +65,12 @@
     padding-top: 70px;
     width: 550px;
     height: 300px;
-    /* padding-right: -10px; */
+    padding-left: 50px;
+  }
+  .form-group em ,
+  .form-group-f1 em {
+    width: 35px;
+    float: left;
+    text-align: center;
+    color: #222;
   }

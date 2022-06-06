@@ -4,7 +4,6 @@
     box-sizing: border-box;
   }
   body{
-    /* height: 1000px; */
     background-color:white;
   }
   header{
@@ -16,7 +15,6 @@
   h3{
     text-align: left;
     font-size: 20px;
-    /* padding-top: 10px; */
     padding-left: 16px;
     font-weight: bolder;
     background-color: #222;
@@ -25,7 +23,6 @@
   h3 span{
     color:goldenrod;
     font-size: 40px;
-    /* line-height: ; */
   }
 
   .header-inner{
@@ -39,7 +36,6 @@
   .logo{
     color: #fff;
     margin-left: -40px;
-    /* margin-top: ; */
     font-size: 28px;
   }
   .logo span{
@@ -60,7 +56,6 @@
   
   .nav-link
   {
-    /* margin-left: 30px; */
     padding-left: 40px;
     color: #fff;
     text-decoration: none;
@@ -68,7 +63,6 @@
   }
   .nav-signup{
     margin-left: 50px;
-    /* font-size: 20px; */
     padding: 0%;
     color:goldenrod;
     text-decoration: none;

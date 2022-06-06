@@ -4,17 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { HttpClientModule } from '@angular/common/http';
-import { LoginComponent } from './login/login.component';
 import { ListsComponent } from './lists/lists.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 // import { ServiceComponent } from './service/service.component';
 // import { ServicesComponent } from './services/services.component';
 import { PostadComponent } from './postad/postad.component';
-import { MaintanenceReqComponent } from './maintanence-req/maintanence-req.component';
-import { AgreementUploadComponent } from './agreement-upload/agreement-upload.component';
 import { TestingComponent } from './testing/testing.component';
-import { SignupComponent } from './signup/signup.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 // import { NodetestComponent } from './nodetest/nodetest.component';
@@ -36,8 +32,6 @@ import { House9Component } from './house9/house9.component';
 import { Services2Component } from './services2/services2.component';
 import { ServiceformComponent } from './serviceform/serviceform.component';
 import { TestComponent } from './test/test.component';
-import { AddformComponent } from './addform/addform.component';
-import { SelectpropComponent } from './selectprop/selectprop.component';
 import { RentalComponent } from './rental/rental.component';
 import { CommercialComponent } from './commercial/commercial.component';
 import { LandComponent } from './land/land.component';
@@ -55,13 +49,10 @@ import { Commercial5Component } from './commercial5/commercial5.component';
 import { Commercial6Component } from './commercial6/commercial6.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashpostpropComponent } from './dashpostprop/dashpostprop.component';
-import { OwnerdetailloginComponent } from './ownerdetaillogin/ownerdetaillogin.component';
 import { DashqueriesComponent } from './dashqueries/dashqueries.component';
 import { DashsignupComponent } from './dashsignup/dashsignup.component';
 import { FormtypeComponent } from './formtype/formtype.component';
 import { HttpCallInterceptor } from 'src/interceptortoast';
-// import { ChatappComponent } from './chatapp/chatapp.component';
-// import { ToastrModule } from 'ngx-toastr';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -69,8 +60,9 @@ import { ToastrModule } from 'ngx-toastr';
 import { BuytypeofpropComponent } from './buytypeofprop/buytypeofprop.component';
 import { SelltypeofpropComponent } from './selltypeofprop/selltypeofprop.component';
 import { FilterPipe } from './filter.pipe';
-
-
+import { LoginformComponent } from './loginform/loginform.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 // const routes: Routes = [
 //   {path: '', component: ListsComponent},
 //   {path: 'signup', component: SignupComponent},
@@ -88,16 +80,12 @@ import { FilterPipe } from './filter.pipe';
   declarations: [
     AppComponent,
     // HomeComponentComponent,
-    LoginComponent,
     ListsComponent,
     ContactComponent,
     AboutusComponent,
     // ServicesComponent,
     PostadComponent,
-    MaintanenceReqComponent,
-    AgreementUploadComponent,
     TestingComponent,
-    SignupComponent,
     HeaderComponent,
     FooterComponent,
     ServicesComponent,
@@ -115,8 +103,6 @@ import { FilterPipe } from './filter.pipe';
     Services2Component,
     ServiceformComponent,
     TestComponent,
-    AddformComponent,
-    SelectpropComponent,
     RentalComponent,
     CommercialComponent,
     LandComponent,
@@ -134,13 +120,15 @@ import { FilterPipe } from './filter.pipe';
     Commercial6Component,
     DashboardComponent,
     DashpostpropComponent,
-    OwnerdetailloginComponent,
     DashqueriesComponent,
     DashsignupComponent,
     FormtypeComponent,
     BuytypeofpropComponent,
     SelltypeofpropComponent,
-    FilterPipe
+    FilterPipe,
+    LoginformComponent,
+    RegisterComponent,
+    LoginComponent,
     
     // AdminLoginComponent,
     // ChatappComponent,
