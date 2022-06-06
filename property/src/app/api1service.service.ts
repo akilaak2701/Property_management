@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class Api1serviceService {
-  test_get(_Email: any) {
+  testGet(_Email: any) {
     throw new Error('Method not implemented.');
   }
   
@@ -34,12 +34,12 @@ export class Api1serviceService {
     console.log(formobject);
     return this.http.post("http://localhost:8000/signup",formobject);
   }
-  test_get1(id:any)
+  testGet1(id:any)
  {
   return this.http.get<any>('http://localhost:8000/getlogin/'+id);
 
  }
- test_get2(id:any)
+ testGet2(id:any)
  {
   return this.http.get<any>('http://localhost:8000/getadminlogin/'+id);
 

@@ -25,7 +25,7 @@ app.post("/postdata2", function (req, res) {
     }
   }
   console.log(fetchData)
-  dbconnection.testdb.find(fetchData).then((data) => {
+  dbconnection.testDb.find(fetchData).then((data) => {
     console.log("DharaniTest", data);
    res.send(data);
   });
@@ -42,7 +42,7 @@ app.post("/signup", function(request,_response){
    
    }
    console.log("data from angular",object);
-   dbconnection.testdb.insert(object).then((data)=>{
+   dbconnection.testDb.insert(object).then((data)=>{
     console.log("data inserted", data);
    }) ;
   
@@ -61,7 +61,7 @@ app.post("/signup", function(request,_response){
 
   
   
-   dbconnection.testdb.find(object).then((data)=>{
+   dbconnection.testDb.find(object).then((data)=>{
      console.log("data fetch from Database",data);
      res.send(data);
    }).catch((err=>{
@@ -81,7 +81,7 @@ app.post("/signup", function(request,_response){
    
   
   
-   dbconnection.testdb.find(object1).then((data)=>{
+   dbconnection.testDb.find(object1).then((data)=>{
      console.log("data fetch from Database",data);
      res.send(data);
    }).catch((err=>{

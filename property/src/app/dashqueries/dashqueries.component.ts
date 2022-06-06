@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 export class DashqueriesComponent implements OnInit {
 
   array:any = [];
-   alluserData: any;
-  alluser: any;
+   allUserData: any;
+  allUser: any;
   empRecord: any;
  constructor(private fb: FormBuilder, private api: ApiserviceService, private router:Router) {
 this.saving()
@@ -41,13 +41,13 @@ let data={
 
 
 this.api.get(data).subscribe((res: any) => {
-  this.alluser=res;
+  this.allUser=res;
   console.log(res);
-  this.alluser = this.alluser.docs;
-  this.alluserData = this.alluser
-  console.log(this.alluserData[0]);
-  for (const array in this.alluserData) {
-    console.log(this.alluserData[array])
+  this.allUser = this.allUser.docs;
+  this.allUserData = this.allUser
+  console.log(this.allUserData[0]);
+  for (const array in this.allUserData) {
+    console.log(this.allUserData[array])
   }
   
 }, (rej: any) => {

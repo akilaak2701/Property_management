@@ -12,7 +12,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
- contactform:FormGroup;
+ contactForm:FormGroup;
  AppService:any;
  static find: any;
  array:any = [];
@@ -25,13 +25,13 @@ export class ContactComponent implements OnInit {
   response:any;
   formGroup: any;
   totalUseage: any;
-  alluserData: any;
-  alluser: any;
+  allUserData: any;
+  allUser: any;
   empRecord: any;
  
 
   constructor(private fb: FormBuilder, private api: ApiserviceService, private router:Router,private toastr:ToastrService ) {
-    this.contactform = this.fb.group({
+    this.contactForm = this.fb.group({
       name: [this.userRecord.name],
       email: [this.userRecord.email],
       message: [this.userRecord.message],
@@ -43,13 +43,13 @@ export class ContactComponent implements OnInit {
 
   }
   get name() {
-    return this.contactform.get('name')!;
+    return this.contactForm.get('name')!;
    }
    get email() {
-    return this.contactform.get('email')!;
+    return this.contactForm.get('email')!;
    }
    get message() {
-    return this.contactform.get('message')!;
+    return this.contactForm.get('message')!;
    }
 
 saving(Formvalue: any) {
@@ -64,20 +64,20 @@ saving(Formvalue: any) {
  this.api.add("propertydb", contact).subscribe((res: any) => {
   console.log(res);
   console.log('akila')
-  this.contactform.reset();
+  this.contactForm.reset();
 }, (rej: any) => {
   this.toastr.error(rej.error.reason);
 
 });
 this.api.get("propertydb").subscribe((res: any) => {
   this.router.navigate(['dashpost'])
-  this.alluser=res;
+  this.allUser=res;
   console.log(res);
-  this.alluser = this.alluser.rows;
-  this.alluserData = this.alluser.map((el: any)=>el.doc);
-  console.log(this.alluserData[0]);
-  for (const array in this.alluserData) {
-    console.log(this.alluserData[array])
+  this.allUser = this.allUser.rows;
+  this.allUserData = this.allUser.map((el: any)=>el.doc);
+  console.log(this.allUserData[0]);
+  for (const array in this.allUserData) {
+    console.log(this.allUserData[array])
   }
   this.toastr.success("data posted","success");
   

@@ -10,10 +10,10 @@ import { FormGroup,FormBuilder, Validators } from '@angular/forms';
 export class RentalapplicationComponent implements OnInit {
 
   successMessage:string ="";
-  applicationform!: FormGroup; 
+  applicationForm!: FormGroup; 
   constructor(private fb: FormBuilder) { }
  ngOnInit(): void {
-  this.applicationform = this.fb.group({
+  this.applicationForm = this.fb.group({
     name:['',[Validators.required]],
    email:['',[Validators.required, Validators.pattern("[A-Za-z0-9]*@gmail.com")]],
   age:['',[Validators.required]],

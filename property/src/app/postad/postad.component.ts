@@ -13,7 +13,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./postad.component.css']
 })
 export class PostadComponent implements OnInit {
-  postform: FormGroup;
+  postForm: FormGroup;
   AppService: any;
   static find: any;
   array:any = [];
@@ -33,13 +33,13 @@ export class PostadComponent implements OnInit {
   response: any;
   formGroup: any;
   totalUseage: any;
-  alluserData: any;
-  alluser: any;
+  allUserData: any;
+  allUser: any;
   empRecord: any;
  constructor(private fb: FormBuilder,private toastr: ToastrService, private api: ApiserviceService, private router:Router) {
 
  
-  this.postform = this.fb.group({
+  this.postForm = this.fb.group({
    name: [this.userRecord.name],
    email: [this.userRecord.email],
    phone: [this.userRecord.phone],
@@ -59,35 +59,35 @@ export class PostadComponent implements OnInit {
    console.log("postprop component is working")
  }
  get name() {
-  return this.postform.get('name')!;
+  return this.postForm.get('name')!;
  }
  get email() {
-  return this.postform.get('email')!;
+  return this.postForm.get('email')!;
  }
  get address() {
-  return this.postform.get('address')!;
+  return this.postForm.get('address')!;
  }
 
  get phone() {
-  return this.postform.get('phone')!;
+  return this.postForm.get('phone')!;
  }
  get landmark() {
-  return this.postform.get('landmark')!;
+  return this.postForm.get('landmark')!;
  }
  get typeofprop() {
-  return this.postform.get('typeofprop')!;
+  return this.postForm.get('typeofprop')!;
  }
  get rent() {
-  return this.postform.get('rent')!;
+  return this.postForm.get('rent')!;
  }
  get description() {
-  return this.postform.get('description')!;
+  return this.postForm.get('description')!;
  }
  get upload() {
-  return this.postform.get('upload')!;
+  return this.postForm.get('upload')!;
  }
  get images(){
-   return this.postform.get('images')!;
+   return this.postForm.get('images')!;
  }
 
  saving(Formvalue: any) {
@@ -112,20 +112,20 @@ export class PostadComponent implements OnInit {
  this.api.add("propertydb", property).subscribe((res: any) => {
   console.log(res);
   console.log('akila')
-  this.postform.reset();
+  this.postForm.reset();
 }, (rej: any) => {
         this.toastr.error(rej.error.reason);
 });
 
 this.api.get("propertydb").subscribe((res: any) => {
   this.router.navigate(['dashpost'])
-  this.alluser=res;
+  this.allUser=res;
   console.log(res);
-  this.alluser = this.alluser.rows;
-  this.alluserData = this.alluser.map((el: any)=>el.doc);
-  console.log(this.alluserData[0]);
-  for (const array in this.alluserData) {
-    console.log(this.alluserData[array])
+  this.allUser = this.allUser.rows;
+  this.allUserData = this.allUser.map((el: any)=>el.doc);
+  console.log(this.allUserData[0]);
+  for (const array in this.allUserData) {
+    console.log(this.allUserData[array])
   }
  
 }, (_rej: any) => {

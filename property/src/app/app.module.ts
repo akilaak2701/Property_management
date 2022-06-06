@@ -39,7 +39,6 @@ import { Commercial6Component } from './commercial6/commercial6.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashpostpropComponent } from './dashpostprop/dashpostprop.component';
 import { DashqueriesComponent } from './dashqueries/dashqueries.component';
-import { DashsignupComponent } from './dashsignup/dashsignup.component';
 import { FormtypeComponent } from './formtype/formtype.component';
 import { HttpCallInterceptor } from 'src/interceptortoast';
 import { CommonModule } from '@angular/common';
@@ -92,7 +91,6 @@ import { LoginComponent } from './login/login.component';
     DashboardComponent,
     DashpostpropComponent,
     DashqueriesComponent,
-    DashsignupComponent,
     FormtypeComponent,
     BuytypeofpropComponent,
     SelltypeofpropComponent,

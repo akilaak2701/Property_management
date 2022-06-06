@@ -5,7 +5,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiserviceService {
-  checkuserlogin(_email: any, _password: any) {
+  checkUserLogin(_email: any, _password: any) {
     throw new Error('Method not implemented.');
   }
   public propertyList = new BehaviorSubject<any>([]);

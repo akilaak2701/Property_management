@@ -1,22 +1,22 @@
 <div class="container-fluid">
     <div class="row">
       <div class="col-12">
-        <form [formGroup]="applicationform" (ngSubmit)="application()">
+        <form [formGroup]="applicationForm" (ngSubmit)="application()">
             <div class="form-group">
                 <label for="name" class='name'></label>
                 <input type="text" placeholder="Enter your name" formControlName="name">
-                <span class="text-danger" *ngIf="applicationform.controls.name.errors && applicationform.controls.name.touched"><br>Field cant be empty</span>
+                <span class="text-danger" *ngIf="applicationForm.controls.name.errors && applicationForm.controls.name.touched"><br>Field cant be empty</span>
               </div>
 
               <div class="form-group">
                 <label for="age" class='age'></label>
                 <input type="number" placeholder="Enter your age" formControlName="age">
-                <span class="text-danger" *ngIf="applicationform.controls.age.errors && applicationform.controls.age.touched"><br>Field cant be empty</span>
+                <span class="text-danger" *ngIf="applicationForm.controls.age.errors && applicationForm.controls.age.touched"><br>Field cant be empty</span>
               </div>
 <div class="form-group">
   <label for="gender" class="gender"></label>
   <input type="text" placeholder="Gender" formControlName="gender">
-                <span class="text-danger" *ngIf="applicationform.controls.gender.errors && applicationform.controls.gender.touched"><br>Field cant be empty</span>
+                <span class="text-danger" *ngIf="applicationForm.controls.gender.errors && applicationForm.controls.gender.touched"><br>Field cant be empty</span>
 </div>   
 
 
@@ -24,43 +24,43 @@
           <div class="form-group">
             <label for="email" class='mail'></label>
             <input type="email" placeholder="Email Address" formControlName="email">
-            <span class="text-danger" *ngIf="applicationform.controls.email.errors && applicationform.controls.email.touched"><br>Invalid Email Address</span>
+            <span class="text-danger" *ngIf="applicationForm.controls.email.errors && applicationForm.controls.email.touched"><br>Invalid Email Address</span>
           </div>
 
           <div class="form-group">
             <label for="phone" class='phone'></label>
             <input type="number" placeholder="Contact number" formControlName="phone">
-            <span class="text-danger" *ngIf="applicationform.controls.phone.errors && applicationform.controls.phone.touched"><br>Field cant be empty</span>
+            <span class="text-danger" *ngIf="applicationForm.controls.phone.errors && applicationForm.controls.phone.touched"><br>Field cant be empty</span>
           </div>
 
           <div class="form-group">
             <label for="marital" class='marital'></label>
             <input type="text" placeholder="Marital status" formControlName="marital">
-            <span class="text-danger" *ngIf="applicationform.controls.marital.errors && applicationform.controls.marital.touched"><br>Field cant be empty</span>
+            <span class="text-danger" *ngIf="applicationForm.controls.marital.errors && applicationForm.controls.marital.touched"><br>Field cant be empty</span>
           </div>
 
         <div class="form-group">
             <label for="tenant" class='tenant'></label>
             <input type="number" placeholder="Tenant count" formControlName="tenant">
-            <span class="text-danger" *ngIf="applicationform.controls.tenant.errors && applicationform.controls.tenant.touched"><br>Enter the tenant count</span>
+            <span class="text-danger" *ngIf="applicationForm.controls.tenant.errors && applicationForm.controls.tenant.touched"><br>Enter the tenant count</span>
           </div>
          
           <div class="form-group">
             <label for="address" class='address'></label>
             <input type="text" placeholder="Your current Address" formControlName="address">
-            <span class="text-danger" *ngIf="applicationform.controls.address.errors && applicationform.controls.address.touched"><br>Enter your Current Address</span>
+            <span class="text-danger" *ngIf="applicationForm.controls.address.errors && applicationForm.controls.address.touched"><br>Enter your Current Address</span>
           </div>
 
 
           <div class="form-group">
             <label for="occupation" class='occupation'></label>
             <input type="text" placeholder="Your occupation" formControlName="occupation">
-            <span class="text-danger" *ngIf="applicationform.controls.occupation.errors && applicationform.controls.occupation.touched"><br>Specify your Problem</span>
+            <span class="text-danger" *ngIf="applicationForm.controls.occupation.errors && applicationForm.controls.occupation.touched"><br>Specify your Problem</span>
           </div>
           <div class="form-group">
             <label for="annualincome" class='income'></label>
             <input type="text" placeholder="Your annual income" formControlName="annualincome">
-            <span class="text-danger" *ngIf="applicationform.controls.annualincome.errors && applicationform.controls.annualincome.touched"><br>Enter your annual income</span>
+            <span class="text-danger" *ngIf="applicationForm.controls.annualincome.errors && applicationForm.controls.annualincome.touched"><br>Enter your annual income</span>
           </div>
          
           <div class="text-center">
