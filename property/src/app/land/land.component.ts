@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiserviceService } from '../apiservice.service';
+
 
 @Component({
   selector: 'app-land',
@@ -7,9 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandComponent implements OnInit {
 
-  constructor() { console.log("sonar");}
+ 
+  propertyList: any;
+  searchKey: string = "";
+  filterCategory: any;
 
-  ngOnInit(): void {console.log("sonar");
-  }
+  constructor(private api:ApiserviceService) { }
+
+  ngOnInit(): void {
+    const selector = {
+      "type": "property"
+    }
+    this.api.findsearch(selector, "propertydb")
+      .subscribe((res: any) => {
+        console.log(res);
+        this.propertyList =this.filterCategory = res['docs'];
+        
+  });
+  this.api.search.subscribe((val:any) => {
+    this.searchKey = val;
+  })
+
+
+
+}
 
 }

@@ -51,6 +51,7 @@ import { FilterPipe } from './filter.pipe';
 import { LoginformComponent } from './loginform/loginform.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { GetcontactloginComponent } from './getcontactlogin/getcontactlogin.component';
 
 @NgModule({
   declarations: [
@@ -98,6 +99,7 @@ import { LoginComponent } from './login/login.component';
     LoginformComponent,
     RegisterComponent,
     LoginComponent,
+    GetcontactloginComponent,
     
   
   ],

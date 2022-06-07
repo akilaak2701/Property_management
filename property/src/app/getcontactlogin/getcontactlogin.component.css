@@ -1,0 +1,84 @@
+section {
+    /* background: url(../../assets/1018573.png); */
+    width: 100%;
+    margin-top: -20px;
+    padding: 90px;
+   }
+   .container {
+    /* background-color: #ddd; */
+    border-radius: 10px;
+    width: 500px;
+   }
+   
+   .text {
+    color: goldenrod;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 2px;
+    margin: 20px 0 30px;
+   }
+   
+   .form-group {
+    width: 60%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 28px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid goldenrod;
+    margin-left: 50px;
+   }
+   input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    width: 200px;
+    float: left;
+    margin: 0 10px;
+    color: goldenrod;
+   }
+   
+   .form-group em {
+    width: 26px;
+    text-align: center;
+    color: #222;
+    float: left;
+   }
+   
+   
+   .signup {
+    margin-left: 270px;
+    padding-top: 30px;
+   }
+   a {
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 19px;
+   }
+   a:hover {
+    color: goldenrod;
+   }
+   
+   .account {
+    font-size: 18px;
+    text-align: center;
+    padding-right: 35%;
+   }
+   a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid goldenrod;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color:goldenrod;
+    color: white;
+  }
+  
+  

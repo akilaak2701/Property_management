@@ -85,8 +85,8 @@ ADMIN VIEW:
 # Frontend:
 
 1. Angular-cli - 11.0.0
-3. ng2-search-filter -0.5.1
-4. ngx-toastr -13.2.1
+
+2. ngx-toastr -13.2.1
 
 # Backend
 
@@ -99,7 +99,7 @@ command to install: npm install npm-package_name
 1. "body-parser": "^1.20.0",
 2. "cors": "^2.8.5",
 3. "express": "^4.18.1",
-5. "nano": "^10.0.0",
+4. "nano": "^10.0.0",
 
 # Database
 

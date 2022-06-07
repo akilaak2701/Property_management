@@ -9,6 +9,8 @@ import { ApiserviceService } from '../apiservice.service';
 export class CommercialComponent implements OnInit {
 
   propertyList: any;
+  searchKey: string = "";
+  filterCategory: any;
 
   constructor(private api:ApiserviceService) { }
 
@@ -19,8 +21,15 @@ export class CommercialComponent implements OnInit {
     this.api.findsearch(selector, "propertydb")
       .subscribe((res: any) => {
         console.log(res);
-        this.propertyList = res['docs'];
+        this.propertyList =this.filterCategory = res['docs'];
+        
   });
+  this.api.search.subscribe((val:any) => {
+    this.searchKey = val;
+  })
+
+
 
 }
+
 }

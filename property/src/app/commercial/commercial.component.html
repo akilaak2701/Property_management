@@ -1,5 +1,5 @@
 <div class="grid">
-  <ng-container *ngFor="let item of propertyList">
+  <ng-container *ngFor="let item of propertyList | filter:searchKey:'address'">
    <div class="grid-item">
       <div class="card">
         <img class="card-img" src="{{item.upload}}" alt="comm" />
@@ -39,6 +39,7 @@
           <p class="card-text">
             A Decent 1BHK house with good interior designs and modular kitchen , 2 attached restrooms , beach view balcony and there are both 2 wheeler and 4wheeler parking facilities
           </p>
+          <!-- <button class="card-btn">GET CONTACT</button> -->
           <a href="comm3" class="comm3">GET CONTACT</a>
 
         </div>
@@ -52,6 +53,7 @@
           <p class="card-text">
             A Decent 1BHK house with good interior designs and modular kitchen , 2 attached restrooms , beach view balcony and there are both 2 wheeler and 4wheeler parking facilities
           </p>
+          <!-- <button class="card-btn">GET CONTACT</button> -->
           <a href="comm4" class="comm4">GET CONTACT</a>
 
         </div>
@@ -65,6 +67,7 @@
           <p class="card-text">
             A Decent 1BHK house with good interior designs and modular kitchen , 2 attached restrooms , beach view balcony and there are both 2 wheeler and 4wheeler parking facilities
           </p>
+          <!-- <button class="card-btn">GET CONTACT</button> -->
           <a href="comm5" class="comm5">GET CONTACT</a>
 
         </div>
@@ -78,6 +81,7 @@
           <p class="card-text">
             A Decent 1BHK house with good interior designs and modular kitchen , 2 attached restrooms , beach view balcony and there are both 2 wheeler and 4wheeler parking facilities
           </p>
+          <!-- <button class="card-btn">GET CONTACT</button> -->
           <a href="comm6" class="comm6">GET CONTACT</a>
 
         </div>

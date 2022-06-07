@@ -30,6 +30,13 @@ import { BuytypeofpropComponent } from './buytypeofprop/buytypeofprop.component'
 import { LoginformComponent } from './loginform/loginform.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { GetcontactloginComponent } from './getcontactlogin/getcontactlogin.component';
+import { Land1Component } from './land1/land1.component';
+import { Land2Component } from './land2/land2.component';
+import { Land3Component } from './land3/land3.component';
+import { Land4Component } from './land4/land4.component';
+import { Land5Component } from './land5/land5.component';
+import { Land6Component } from './land6/land6.component';
 
 
 
@@ -73,8 +80,16 @@ const routes: Routes = [
   {path:'posted' , component:DashpostpropComponent},
   {path:'buytypeofprop' , component:BuytypeofpropComponent},
   {path:'signup' , component:RegisterComponent},
-  {path:'login' , component:LoginComponent}
-  
+  {path:'login' , component:LoginComponent},
+{path:'applylogin' , component:GetcontactloginComponent}  ,
+{path:'land1' , component:Land1Component},
+{path:'land2' , component:Land2Component},
+{path:'land3' , component:Land3Component},
+{path:'land4' , component:Land4Component},
+{path:'land5' , component:Land5Component},
+{path:'land6' , component:Land6Component},
+{path:'logout' ,  component:LoginformComponent},
+
 ]
 
 
