@@ -1,4 +1,4 @@
-# Property Management System
+# PROPERTY MANAGEMENT SYSTEM
 
 
 # Description
@@ -85,7 +85,6 @@ ADMIN VIEW:
 # Frontend:
 
 1. Angular-cli - 11.0.0
-
 2. ngx-toastr -13.2.1
 
 # Backend
