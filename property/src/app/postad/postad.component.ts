@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormBuilder} from '@angular/forms';
+import { FormGroup,FormBuilder,Validators} from '@angular/forms';
 import { ApiserviceService } from '../apiservice.service';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
@@ -56,8 +56,20 @@ export class PostadComponent implements OnInit {
  }
 
  ngOnInit(): void {
-   console.log("postprop component is working")
- }
+  
+  this.postForm = this.fb.group({
+    name:['',[Validators.required,Validators.pattern("[a-zA-Z][a-zA-Z ]+")]],
+    email:['',[Validators.required, Validators.pattern("[A-Za-z0-9]*@gmail.com")]],
+    phone:['',[Validators.required,Validators.pattern("[0-9]{10}$")]],
+    address:['',[Validators.required]],
+    landmark:['',[Validators.required]],
+    typeofprop:['',[Validators.required]],
+    rent:['',[Validators.required]],
+    description:['',[Validators.required]],
+    upload:['',[Validators.required]],
+  });
+  }
+ 
  get name() {
   return this.postForm.get('name')!;
  }

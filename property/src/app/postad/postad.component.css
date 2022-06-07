@@ -2,6 +2,9 @@ h3{
   text-align: center;
   font-size: 30px;
 }
+span{
+  color: goldenrod;
+}
    
    .form-group , 
    .form-group-f1{
@@ -66,4 +69,7 @@ h3{
     float: left;
     text-align: center;
     color: #222;
+  }
+  .text-danger{
+    color: red;
   }

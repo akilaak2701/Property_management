@@ -88,6 +88,7 @@ const routes: Routes = [
 {path:'land4' , component:Land4Component},
 {path:'land5' , component:Land5Component},
 {path:'land6' , component:Land6Component},
+{path:'adminlogin' , component:LoginformComponent},
 {path:'logout' ,  component:LoginformComponent},
 
 ]

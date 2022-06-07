@@ -96,4 +96,14 @@ section {
     width: 500px;
 
     } 
-    
+    h3{
+      font-size: 40px;
+      padding-left: 30%;
+      margin-top: -60px;
+    }
+    span{
+      color: goldenrod;
+    }
+    .text-danger{
+      color: red;
+    }

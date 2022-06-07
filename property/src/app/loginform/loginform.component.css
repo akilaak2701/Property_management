@@ -13,8 +13,9 @@ h1 span{
     /* display: flex; */
     height: 300px;
     width: 600px;
-    /* margin-top: 40px; */
+    margin-top: -70px;
     padding-left: 300px;
+    
 }
 section {
     padding: 1rem 9%;
@@ -67,13 +68,17 @@ section {
     color: black; 
     background-color: goldenrod;
     border: none;
-    padding: 16px 32px;
+    padding: 16px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 100px;
     transition-duration: 0.4s;
     cursor: pointer;
   
 }
+.text-danger{
+    color: red;
+    font-size: 20px;
+  }

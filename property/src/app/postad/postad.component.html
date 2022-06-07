@@ -1,4 +1,4 @@
-<h3>POST YOUR PROP AT SIMPLE STEPS</h3>
+<h3>POST YOUR PROP AT <span>SIMPLE STEPS</span></h3>
 <div class="container-fluid">
     <div class="row">
       <div class="col-12">
@@ -15,7 +15,7 @@
           <em class="fa fa-envelope"></em>
 
             <input type="email" placeholder="Email Address" formControlName="email">
-            <span class="text-danger" *ngIf="postForm.controls.email.errors && postForm.controls.email.touched"><br>Invalid Email Address</span>
+            <span class="text-danger" *ngIf="postForm.controls.email.errors && postForm.controls.email.touched"><br>*invalid Email Address</span>
           </div>
 
           <div class="form-group">
@@ -23,7 +23,7 @@
           <em class="fa fa-phone"></em>
 
             <input type="number" placeholder="Contact number" formControlName="phone">
-            <span class="text-danger" *ngIf="postForm.controls.phone.errors && postForm.controls.phone.touched"><br>Field cant be empty</span>
+            <span class="text-danger" *ngIf="postForm.controls.phone.errors && postForm.controls.phone.touched"><br>*phone number cannot be cmpty</span>
           </div>
 
           
@@ -39,7 +39,7 @@
             <label for="landmark" class='landmark'></label>
             <em class="fa fa-location-arrow"></em>
             <input type="text" placeholder="Nearest Landmark" formControlName="landmark">
-            <span class="text-danger" *ngIf="postForm.controls.landmark.errors && postForm.controls.landmark.touched"><br>Specify your Problem</span>
+            <span class="text-danger" *ngIf="postForm.controls.landmark.errors && postForm.controls.landmark.touched"><br>*landmark cannot be empty</span>
           </div>
         
          
@@ -54,21 +54,21 @@
             <em class="fa fa-building"></em>
 
             <input type="text" placeholder="Type of the property" formControlName="typeofprop">
-            <span class="text-danger" *ngIf="postForm.controls.typeofprop.errors && postForm.controls.typeofprop.touched"><br>Enter your Current Address</span>
+            <span class="text-danger" *ngIf="postForm.controls.typeofprop.errors && postForm.controls.typeofprop.touched"><br>*specify the property type</span>
           </div>
           <div class="form-group-f1">
             <label for="rent" class='rent'></label>
             <em class="fa fa-credit-card"></em>
 
             <input type="text" placeholder="Rent/month" formControlName="rent">
-            <span class="text-danger" *ngIf="postForm.controls.rent.errors && postForm.controls.rent.touched"><br>Enter your annual income</span>
+            <span class="text-danger" *ngIf="postForm.controls.rent.errors && postForm.controls.rent.touched"><br>*specify the rent</span>
           </div>
           <div class="form-group-f1">
             <label for="description" class='description'></label>
             <em class="fa fa-pen"></em>
 
             <input type="text" placeholder="Description about your property" formControlName="description">
-            <span class="text-danger" *ngIf="postForm.controls.description.errors && postForm.controls.description.touched"><br>Enter your annual income</span>
+            <span class="text-danger" *ngIf="postForm.controls.description.errors && postForm.controls.description.touched"><br>*field cannot be empty</span>
           </div>
           <div class="form-group-f1">
             <label for="fileUpload"></label>
