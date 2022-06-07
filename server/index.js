@@ -2,7 +2,11 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const dbconnection = require("./nano");
-const app = express();
+const app = express();  // Compliant
+app.disable("x-powered-by");
+const helmet = require("helmet");
+app.use(helmet.hidePoweredBy());
+
 const port = 8000;
 
 app.use(
