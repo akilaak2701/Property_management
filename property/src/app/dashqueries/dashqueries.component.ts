@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder} from '@angular/forms';
 import { ApiserviceService } from '../apiservice.service';
 import { Router } from '@angular/router';
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './dashqueries.component.html',
   styleUrls: ['./dashqueries.component.css']
 })
-export class DashqueriesComponent implements OnInit {
+export class DashqueriesComponent  {
 
   array:any = [];
    allUserData: any;
@@ -20,8 +20,7 @@ this.saving()
   
  }
 
- ngOnInit(): void {
- }
+
    
  saving() {
   

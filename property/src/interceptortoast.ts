@@ -21,7 +21,7 @@ export class HttpCallInterceptor implements HttpInterceptor {
       }
       else {
           this.toastr.error(err.error.reason); 
-      };
+      }
         
       })
     )

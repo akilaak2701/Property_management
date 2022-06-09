@@ -35,7 +35,7 @@ export class RegisterComponent implements OnInit {
     login(FormValue:any){
       console.log("from form",FormValue);
      
-     this.signup.add1(FormValue).subscribe((data)=>{
+     this.signup.add1(FormValue).subscribe((_data)=>{
      
       this.toast.success('you are registered successfully');
     },

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ApiserviceService } from '../apiservice.service';
 import { Router } from '@angular/router';
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './dashpostprop.component.html',
   styleUrls: ['./dashpostprop.component.css']
 })
-export class DashpostpropComponent implements OnInit {
+export class DashpostpropComponent  {
 
   array:any = [];
   allUserData: any;
@@ -20,9 +20,7 @@ this.saving()
  
 }
 
-ngOnInit(): void {
-}
-  
+
 saving() {
  
 let data={
