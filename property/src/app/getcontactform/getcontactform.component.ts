@@ -25,7 +25,7 @@ export class GetcontactformComponent implements OnInit {
   login(Formvalue:any)
  {
     console.log(Formvalue.email);
-    this.signup.testGet1(Formvalue.email).subscribe((data)=>{
+    this.signup.testGetLogin(Formvalue.email).subscribe((data)=>{
       console.log("data returned from server",data);
       
        if(data.docs[0].email == Formvalue.email){

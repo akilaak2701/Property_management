@@ -69,15 +69,15 @@ footer {
   
   
   .footer-distributed .footer-center {
-    width: 40%;
-    
+    width: calc(40% - 80px);
+    padding: 0 40px;
   }
   
   .footer-distributed .footer-center em {
     background-color: #222;
     color: #ffffff;
     font-size: 25px;
-    width: 98px;
+    width: 30px;
     height: 38px;
     border-radius: 50%;
     text-align: center;
@@ -97,7 +97,7 @@ footer {
     vertical-align: middle;
     margin: 0;
     font-size: 20px;
-    margin-left: 90px;
+    margin-left: 10px;
   }
   
   .footer-distributed .footer-center p span {
@@ -124,8 +124,6 @@ footer {
     font-size: 16px;
     font-weight: normal;
     margin: 0;
-    margin-left: 50px;
-
   }
   
   .footer-distributed .footer-company-about span {
@@ -138,7 +136,6 @@ footer {
   
   .footer-distributed .footer-icons {
     margin-top: 25px;
-    margin-left: 50px;
 
   }
   

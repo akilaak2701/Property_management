@@ -16,16 +16,6 @@ export class Api1serviceService {
  
   constructor(private http: HttpClient) { }
 
-  storeData(formData: any) {
-    console.log("From api", formData);
-    return this.http.post<any>('http://localhost:8000/postdata/', formData)
-  }
-
-  storeData1(formData1: any) {
-    console.log("From api", formData1);
-    return this.http.post<any>('http://localhost:8000/postdata1/', formData1)
-  }
-
   storeData2(formData2: any) {
     console.log("From api", formData2);
     return this.http.post<any>('http://localhost:8000/loginpost/', formData2)
@@ -34,12 +24,12 @@ export class Api1serviceService {
     console.log(formobject);
     return this.http.post("http://localhost:8000/signup",formobject);
   }
-  testGet1(id:any)
+  testGetLogin(id:any)
  {
   return this.http.get<any>('http://localhost:8000/getlogin/'+id);
 
  }
- testGet2(id:any)
+ testGetAdminLogin(id:any)
  {
   return this.http.get<any>('http://localhost:8000/getadminlogin/'+id);
 
