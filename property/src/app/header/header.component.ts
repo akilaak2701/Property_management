@@ -8,7 +8,6 @@ import { ApiserviceService } from '../apiservice.service';
 })
 export class HeaderComponent implements OnInit {
 public searchTerm :string ='';
-  // apiservice: any;
   ApiserviceService: any;
   constructor(private api: ApiserviceService ) { 
     

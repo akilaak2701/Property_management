@@ -61,37 +61,21 @@ saving(Formvalue: any) {
  type:"contact",
  createdBy:d
   }
- this.api.add("propertydb", contact).subscribe((res: any) => {
-  console.log(res);
-  console.log('akila')
-  this.contactForm.reset();
-}, (rej: any) => {
-  this.toastr.error(rej.error.reason);
-
-});
-this.api.get("propertydb").subscribe((res: any) => {
-  this.router.navigate(['dashpost'])
-  this.allUser=res;
-  console.log(res);
-  this.allUser = this.allUser.rows;
-  this.allUserData = this.allUser.map((el: any)=>el.doc);
-  console.log(this.allUserData[0]);
-  for (const array in this.allUserData) {
-    console.log(this.allUserData[array])
+ this.api.add("propertydb", contact).subscribe(
+  (res) => {
+    console.log("response",res);
+    if(res)
+    {
+    this.toastr.success('posted successfully');
+    this.contactForm.reset();
+    }
+    else{
+      this.toastr.error('failed to post');
+    }
   }
-  this.toastr.success("data posted","success");
-  
-}, (_rej: any) => {
-  console.log("sonar");
+);
 
-});
-this.api.getDocsByID("propertydb","ecb83221a3496d8815d5c195441742ac").subscribe((res: any) => {
-   const temp=res;
-   console.log(temp);
-   this.empRecord.reset();
- },(_rej: any)=>{
-   console.log("sonar");
- });
+
 
 }
 }
