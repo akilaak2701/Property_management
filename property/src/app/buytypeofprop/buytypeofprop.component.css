@@ -61,4 +61,7 @@
       text-decoration: none;
       display: inline-block;
       }
-      
+      .prev a{
+        color: goldenrod;
+        margin-top: -70px;
+      }

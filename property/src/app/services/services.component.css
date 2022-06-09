@@ -133,3 +133,7 @@ button:hover {
   background-color: goldenrod;
   color: white;
 }
+.prev a{
+  color: goldenrod;
+  margin-top: -70px;
+}

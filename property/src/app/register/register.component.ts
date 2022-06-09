@@ -37,4 +37,5 @@ export class RegisterComponent implements OnInit {
       console.log("data returned from server",data);
       })
     }
+    
   }

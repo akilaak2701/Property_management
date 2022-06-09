@@ -55,7 +55,8 @@ const routes: Routes = [
 {path:'view',component:ViewComponent},
 {path:'postcommercial' , component:PostcommercialComponent},
 {path:'postland' , component:PostlandComponent},
-{path:'builthouse' , component:PostadComponent}
+{path:'builthouse' , component:PostadComponent},
+{path:'posttype' , component:SelectposttypeComponent}
 ]
 
 
