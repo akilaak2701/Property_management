@@ -5,24 +5,9 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { PostadComponent } from './postad/postad.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
-import { RentalapplicationComponent } from './rentalapplication/rentalapplication.component';
 import { House1Component } from './house1/house1.component';
-import { House2Component } from './house2/house2.component';
-import { House3Component } from './house3/house3.component';
-import { House4Component } from './house4/house4.component';
-import { House5Component } from './house5/house5.component';
-import { House6Component } from './house6/house6.component';
-import { House7Component } from './house7/house7.component';
-import { House8Component } from './house8/house8.component';
-import { House9Component } from './house9/house9.component';
 import { LandComponent } from './land/land.component';
 import { CommercialComponent } from './commercial/commercial.component';
-import { Commercial1Component } from './commercial1/commercial1.component';
-import { Commercial2Component } from './commercial2/commercial2.component';
-import { Commercial3Component } from './commercial3/commercial3.component';
-import { Commercial4Component } from './commercial4/commercial4.component';
-import { Commercial5Component } from './commercial5/commercial5.component';
-import { Commercial6Component } from './commercial6/commercial6.component';
 import { DashpostpropComponent } from './dashpostprop/dashpostprop.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashqueriesComponent } from './dashqueries/dashqueries.component';
@@ -30,13 +15,11 @@ import { BuytypeofpropComponent } from './buytypeofprop/buytypeofprop.component'
 import { LoginformComponent } from './loginform/loginform.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-import { GetcontactloginComponent } from './getcontactlogin/getcontactlogin.component';
-import { Land1Component } from './land1/land1.component';
-import { Land2Component } from './land2/land2.component';
-import { Land3Component } from './land3/land3.component';
-import { Land4Component } from './land4/land4.component';
-import { Land5Component } from './land5/land5.component';
-import { Land6Component } from './land6/land6.component';
+import { GetcontactformComponent } from './getcontactform/getcontactform.component';
+import { ViewComponent } from './view/view.component';
+import { PostcommercialComponent } from './postcommercial/postcommercial.component';
+import { PostlandComponent } from './postland/postland.component';
+import { SelectposttypeComponent } from './selectposttype/selectposttype.component';
 
 
 
@@ -45,35 +28,20 @@ const routes: Routes = [
   {path: '',component:ListsComponent},
   {path:'lists',component:ListsComponent},
   {path:'aboutus',component:AboutusComponent},
-  {path:'postprop' ,component:PostadComponent},
+  {path:'postprop' ,component:SelectposttypeComponent},
   {path:'contact' ,component:ContactComponent},
   {path:'service' ,component:ServicesComponent}, 
   {path:'akila',component:LoginformComponent},
   {path:'house1' , component:House1Component},
-  {path:'house2' , component:House2Component},
-  {path:'house3' , component:House3Component},
-  {path:'house4' , component:House4Component},
-  {path:'house5' , component:House5Component},
-  {path:'house6' , component:House6Component},
-  {path:'house7' , component:House7Component},
-  {path:'house8' , component:House8Component},
-  {path:'house9' , component:House9Component},
-  {path:'apply' , component:RentalapplicationComponent},
   {path:'selectprop' , component:BuytypeofpropComponent},
   {path:'land',component:LandComponent},
   {path:'commercial', component:CommercialComponent},
-  {path:'comm1' , component:Commercial1Component},
-  {path:'comm2' , component:Commercial2Component},
-  {path:'comm3' , component:Commercial3Component},
-  {path:'comm4' , component:Commercial4Component},
-  {path:'comm5' , component:Commercial5Component},
-  {path:'comm6' , component:Commercial6Component},
   {path:'rental' , component:ServicesComponent},
   {path:'land' , component:LandComponent},
   {path:'contact2' ,  component:ContactComponent},
   {path:'dashpost' , component:DashpostpropComponent},
   {path:'buy' , component:ServicesComponent},
-  {path:'sell' , component:PostadComponent},
+  {path:'sell' , component:SelectposttypeComponent},
   {path:'commercial' , component:CommercialComponent},
   {path:'dashboard', component:DashboardComponent},
   {path:'queries' , component:DashqueriesComponent},
@@ -81,16 +49,13 @@ const routes: Routes = [
   {path:'buytypeofprop' , component:BuytypeofpropComponent},
   {path:'signup' , component:RegisterComponent},
   {path:'login' , component:LoginComponent},
-{path:'applylogin' , component:GetcontactloginComponent}  ,
-{path:'land1' , component:Land1Component},
-{path:'land2' , component:Land2Component},
-{path:'land3' , component:Land3Component},
-{path:'land4' , component:Land4Component},
-{path:'land5' , component:Land5Component},
-{path:'land6' , component:Land6Component},
 {path:'adminlogin' , component:LoginformComponent},
 {path:'logout' ,  component:LoginformComponent},
-
+{path:'getcontact' , component:GetcontactformComponent},
+{path:'view',component:ViewComponent},
+{path:'postcommercial' , component:PostcommercialComponent},
+{path:'postland' , component:PostlandComponent},
+{path:'builthouse' , component:PostadComponent}
 ]
 
 

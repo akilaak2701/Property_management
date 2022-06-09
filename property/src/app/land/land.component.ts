@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiserviceService } from '../apiservice.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,21 +10,22 @@ import { ApiserviceService } from '../apiservice.service';
 })
 export class LandComponent implements OnInit {
 
- 
-  propertyList: any;
+  landList: any;
   searchKey: string = "";
   filterCategory: any;
+  temp: any;
+  sample: any;
 
-  constructor(private api:ApiserviceService) { }
+  constructor(private api:ApiserviceService,private router:Router) { }
 
   ngOnInit(): void {
     const selector = {
-      "type": "property"
+      "type": "land"
     }
     this.api.findsearch(selector, "propertydb")
       .subscribe((res: any) => {
         console.log(res);
-        this.propertyList =this.filterCategory = res['docs'];
+        this.landList =this.filterCategory = res['docs'];
         
   });
   this.api.search.subscribe((val:any) => {
@@ -33,5 +35,9 @@ export class LandComponent implements OnInit {
 
 
 }
+event(id:any){
+  console.log(id);
+  this.router.navigate(['view'],{queryParams:id})
 
+}
 }

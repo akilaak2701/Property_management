@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const dbconnection = require("./nano");
-const app = express();  // Compliant
+const app = express(); 
 app.disable("x-powered-by");
 const helmet = require("helmet");
 app.use(helmet.hidePoweredBy());
@@ -30,7 +30,7 @@ app.post("/postdata2", function (req, res) {
   }
   console.log(fetchData)
   dbconnection.testDb.find(fetchData).then((data) => {
-    console.log("DharaniTest", data);
+    console.log("akila", data);
    res.send(data);
   });
 });

@@ -42,9 +42,22 @@ export class ApiserviceService {
   }
   getDocsByID(db: string,id: string): Observable<{}> {
     const url = this.url + db + '/'+id;
+
     return this.http.get(url, this.httpOptions)
   }
   
+  getByTypedUser(type: string, id: any) {
+    let url = this.url + 'propertydb/_find'
+    let typedData = {
+      selector: {
+        type: type,
+        name: id
+      }
+
+    };
+    return this.http.post(url, typedData, this.httpOptions)
+
+  }
   findsearch(selectorObject: any, dataBase: string) {
       const url = `${this.url + dataBase}/_find`
       const dataObject = {

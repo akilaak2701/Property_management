@@ -1,17 +1,28 @@
 
-	<div class="container">
-		<div class="contact-box">
-			<div class="left"></div>
-			<div class="right">
-				<h2>CONTACT</h2>
-                <p>AKILA SRI</p><br>
-                <p>
- 
- 
-                    <em class="fas fa-envelope"></em>akilaak2701@gmail.com</p><br>
-                    <p><em class="fas fa-phone-alt"></em>9566577069</p><br>
-                    <p>A Decent 1BHK house with good interior designs and modular kitchen , 2 attached restrooms , beach view balcony and there are both 2 wheeler and 4wheeler parking facilities</p><br>
-				
-			</div>
-		</div>
+	<h3>BUY YOUR DREAM PROP - SERVICE WITH A LIFESTYLE</h3>
+	<div class="grid">
+  <ng-container *ngFor="let item of propertyList | filter:searchKey:'address'">
+  <div class="grid-item">
+	<div class="card">
+	  <img class="card-img" src="{{item.upload}}" alt="Rome" />
+	  <div class="card-content">
+		<h6 class="card-header">{{item.name}}</h6>
+		<p class="card-text">
+		{{item.email}}
+		</p>
+		<p class="card-text">
+			{{item.phone}}
+			</p>
+			<p class="card-text">
+				{{item.description}}
+				</p>
+				<p class="card-text">
+					{{item.landmark}}
+					</p>
+					<p class="card-text">
+						{{item.rent}}
+						</p>
+	  </div>
 	</div>
+  </div>
+</ng-container>

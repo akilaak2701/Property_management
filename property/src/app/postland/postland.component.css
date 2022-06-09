@@ -1,0 +1,86 @@
+h3{
+    text-align: center;
+    font-size: 30px;
+  }
+  span{
+    color: goldenrod;
+  }
+     
+     .form-group , 
+     .form-group-f1{
+      width: 80%;
+      overflow: hidden;
+      font-size: 20px;
+      padding: 16px 0px;
+      margin: 8px 0;
+      border-bottom: 1px solid goldenrod;
+      margin-left: 130px;
+      display: flex;
+      background-color:transparent;
+      border-radius: .5rem;
+      border: 2px solid #222;
+      /* box-shadow: 1px 3px 5px  black; */
+      
+      
+    }
+  
+    .container-fluid {
+      margin-left: 315px;
+      /* background-image: url(../../assets/wave.jpg); */
+  
+    }
+   
+    input {
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 18px;
+      width: 300px;
+      float: left;
+      margin: 0 10px;
+    }
+    
+    .form-group label {
+      width: 40px;
+      float: left;
+      text-align: left;
+    }
+    .btn {
+     
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        max-width: 150px;
+        width: 100%;
+        border: none;
+        outline: none;
+        color: #fff;
+        border-radius: 5px;
+        margin: 50px 265px;
+        background-color:goldenrod;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    }
+    .text-success {
+      color:black;
+    }
+    .row{
+      display: flex;
+    }
+    .img img{
+      padding-top: 70px;
+      width: 550px;
+      height: 300px;
+      padding-left: 50px;
+    }
+    .form-group em ,
+    .form-group-f1 em {
+      width: 35px;
+      float: left;
+      text-align: center;
+      color: #222;
+    }
+    .text-danger{
+      color: red;
+    }

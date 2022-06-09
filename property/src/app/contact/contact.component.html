@@ -1,21 +1,22 @@
   <div class="container-fluid">
+
     <div class="row">
       <div class="col-12">
         <form [formGroup]="contactForm" (ngSubmit)="saving(this.contactForm.value)">
             <div class="form-group">
                 <label for="name" class='name'></label>
-                <input type="text" placeholder="Enter your name" formControlName="name">
+                <input type="text" placeholder="Enter your name" required formControlName="name">
                 <span class="text-danger" *ngIf="contactForm.controls.name.errors && contactForm.controls.name.touched"><br>Field cant be empty</span>
               </div>
           <div class="form-group">
             <label for="email" class='mail'></label>
-            <input type="email" placeholder="Email Address" formControlName="email">
+            <input type="email" placeholder="Email Address" required formControlName="email">
             <span class="text-danger" *ngIf="contactForm.controls.email.errors && contactForm.controls.email.touched"><br>Invalid Email Address</span>
           </div>
 
-          <div class="form-group">
+          <div class="form-group-f1">
             <label for="message" class='message'></label>
-            <input type="textarea" placeholder="Ask Your Queries" formControlName="message">
+            <input type="textarea" placeholder="Ask Your Queries" required formControlName="message">
             <span class="text-danger" *ngIf="contactForm.controls.message.errors && contactForm.controls.message.touched"><br>Field cant be empty</span>
           </div>
 

@@ -1,5 +1,5 @@
+<h3>BUY YOUR DREAM PROP - <span>SERVICE WITH A LIFESTYLE</span></h3>
 
-<h3>BUY YOUR DREAM PROP - SERVICE WITH A LIFESTYLE</h3>
         <div class="grid">
       <ng-container *ngFor="let item of propertyList | filter:searchKey:'address'">
       <div class="grid-item">
@@ -7,10 +7,11 @@
           <img class="card-img" src="{{item.upload}}" alt="Rome" />
           <div class="card-content">
             <h6 class="card-header">{{item.address}}</h6>
-            <p class="card-text">
-            {{item.description}}
+            <p class="card-text"> OWNED BY
+            {{item.name}}
             </p>
-            <a href="house1" class="house1">GET CONTACT</a>
+            <!-- <a href="getcontact" class="house1">GET CONTACT</a> -->
+            <button routerLink="getcontact" (click)="event(item)">GET CONTACT</button>
           </div>
         </div>
       </div>

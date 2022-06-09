@@ -1,0 +1,55 @@
+<section>
+    <h3>LO<span>GIN</span></h3>
+  
+      <div class="container">
+  
+        <form [formGroup]="loginForm" (ngSubmit)="login(this.loginForm.value)">
+          <div class="form-group">
+            <em class="fa fa-envelope"></em>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              formControlName="email"
+            />
+            <span
+              class="text-danger"
+              *ngIf="
+                loginForm.controls.email.errors && loginForm.controls.email.touched
+              "
+              ><br />*invalid Email Address</span
+            >
+          </div>
+    
+          <div class="form-group">
+            <em class="fa fa-lock"></em>
+            <label for="password"></label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              formControlName="password"
+            />
+            <span
+              class="text-danger"
+              *ngIf="
+                loginForm.controls.password.errors &&
+                loginForm.controls.password.touched
+              "
+              ><br />*invalid Password</span
+            >
+          </div>
+    
+          <div class="login-btn">
+            <p class="account">
+              Don't have an account? <span><a href="signup">SIGNUP</a></span>
+            </p>
+            <button id="submitButton" type="submit" class="btn">LOGIN</button>
+            
+          </div>
+        </form>
+        <div class="image">
+          <img class="img" src="../../assets/loginpage.jpeg" alt="img" />
+         </div>
+      </div>
+    </section>

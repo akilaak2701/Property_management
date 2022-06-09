@@ -11,12 +11,23 @@ span{
     width: 80%;
     overflow: hidden;
     font-size: 20px;
-    padding: 28px 0px;
+    padding: 16px 0px;
     margin: 8px 0;
     border-bottom: 1px solid goldenrod;
     margin-left: 130px;
     display: flex;
+    background-color:transparent;
+    border-radius: .5rem;
+    border: 2px solid #222;
+    /* box-shadow: 1px 3px 5px  black; */
     
+    
+  }
+
+  .container-fluid {
+    margin-left: 315px;
+    /* background-image: url(../../assets/wave.jpg); */
+
   }
  
   input {

@@ -67,18 +67,7 @@ h2 {
   justify-content: center;
 }
 
-.side-menu li a {
-  font-size: 20px;
-  padding: 10px 30px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-}
-.side-menu li a:hover {
-  background:transparent;
-  color: goldenrod;
-  transform: scale(1.08);
-}
+
 .icon2 {
   color: #fff;
   width: 30px;
@@ -90,11 +79,11 @@ h2 {
   width: 35px;
 }
 
-a {
+/* a {
   color: #fff;
   text-decoration: none;
 
-}
+} */
 
 .logout {
   margin-top: 90px;
@@ -170,16 +159,7 @@ a {
   margin: 0.5em 0 1.4em 0;
 }
 
-.attribution {
-  margin-top: 3rem;
-  font-size: 11px;
-  text-align: center;
-  color: hsla(0, 0%, 100%, 0.6);
-}
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
 
 .container a {
   color: goldenrod;
@@ -189,3 +169,26 @@ a {
 span{
   color: goldenrod;
 }
+a:link, a:visited {
+  background-color: transparent;
+  color: black;
+  border: 2px solid goldenrod;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: -10px;
+  width: 140px;
+  margin-top: 60px;
+
+  font-size: 20px;
+  padding: 10px 30px;
+  color: #fff;
+  display: flex;
+}
+
+ a:hover, a:active {
+  background-color:goldenrod;
+  color: white;
+} 

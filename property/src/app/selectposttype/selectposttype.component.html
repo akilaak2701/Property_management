@@ -1,4 +1,14 @@
-<h3>POST YOUR<span>BUILT HOUSE</span></h3>
+<h3>POST YOUR PROP AT<span>  ONE CLICK</span></h3>
+<div class="container">
+    <div class="img">
+    <img src="../../assets/postpage.jpg" alt="posttype"><br></div>
+    <div class="link">
+<a href="builthouse">BUILT HOUSE</a> <br>
+<a href="postcommercial">COMMERCIAL SPACES</a> <br>
+<a href="postland"> PROPERTY LAND</a>
+    </div>
+</div>
+<!-- <a href="builthouse">BUILT HOUSE</a><a href="postcommercial">COMMERCIAL</a><a href="postland">LAND</a>
 <div class="container-fluid">
   <div class="row">
     <div class="col-12">
@@ -28,20 +38,13 @@
             type="email"
             placeholder="Email Address"
             formControlName="email"
-            pattern="[A-Za-z0-9]*@gmail.com"
           />
           <span
             class="text-danger"
             *ngIf="
               postForm.controls.email.errors && postForm.controls.email.touched
             "
-            ><br />* Email Address cannot be empty</span
-          >
-          <span
-            class="text-danger"
-            *ngIf="
-              postForm.controls.email.errors?.pattern"
-            ><br />* Invalid mail ID</span
+            ><br />*invalid Email Address</span
           >
         </div>
 
@@ -53,21 +56,13 @@
             type="number"
             placeholder="Contact number"
             formControlName="phone"
-            pattern="[0-9]{10}"
           />
           <span
             class="text-danger"
             *ngIf="
-              postForm.controls.phone.errors && postForm.controls.phone.touched 
+              postForm.controls.phone.errors && postForm.controls.phone.touched
             "
             ><br />*phone number cannot be cmpty</span
-          >
-          <span
-            class="text-danger"
-            *ngIf="
-              postForm.controls.phone.errors?.pattern"
-            
-            ><br />*phone Number must be 10 digits</span
           >
         </div>
 
@@ -176,4 +171,4 @@
       </form>
     </div>
   </div>
-</div>
+</div> -->

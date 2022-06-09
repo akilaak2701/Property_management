@@ -15,13 +15,17 @@ section {
     }
     
     .form-group {
-     width: 100%;
+     width: 120%;
      overflow: hidden;
      font-size: 20px;
-     padding: 28px 0;
-     margin: 8px 0;
+     padding: 16px 10px;
+     margin: 40px 0;
      border-bottom: 1px solid goldenrod;
-     margin-left: 50px;
+     margin-left: 10px;
+     background-color:transparent;
+     border-radius: .5rem;
+     border: 2px solid #222 ;
+     /* box-shadow: 1px 3px 5px  black; */
     }
     input {
      border: none;
@@ -43,7 +47,7 @@ section {
     
     
     .signup {
-     margin-left: 270px;
+     margin-left: 300px;
      padding-top: 30px;
     }
     a {
@@ -98,7 +102,7 @@ section {
     } 
     h3{
       font-size: 40px;
-      padding-left: 30%;
+      padding-left: 40%;
       margin-top: -60px;
     }
     span{

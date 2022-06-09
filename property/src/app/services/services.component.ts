@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiserviceService } from '../apiservice.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-services',
@@ -10,9 +11,11 @@ export class ServicesComponent implements OnInit {
   propertyList: any;
   searchKey: string = "";
   filterCategory: any;
+  temp: any;
+  sample: any;
 
 
-  constructor(private api:ApiserviceService) { }
+  constructor(private api:ApiserviceService,private router:Router) { }
 
   ngOnInit(): void {
     const selector = {
@@ -29,6 +32,12 @@ export class ServicesComponent implements OnInit {
   })
 
 
+
+}
+
+event(id:any){
+ console.log(id);
+ this.router.navigate(['view'],{queryParams:id})
 
 }
 
