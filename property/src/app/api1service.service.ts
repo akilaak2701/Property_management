@@ -28,7 +28,7 @@ export class Api1serviceService {
 
   storeData2(formData2: any) {
     console.log("From api", formData2);
-    return this.http.post<any>('http://localhost:8000/postdata2/', formData2)
+    return this.http.post<any>('http://localhost:8000/loginpost/', formData2)
   }
   add1(formobject:any){
     console.log(formobject);

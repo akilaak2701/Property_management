@@ -16,7 +16,7 @@ app.use(
 );
 app.use(bodyParser.json());
 
-app.post("/postdata2", function (req, res) {
+app.post("/loginpost", function (req, res) {
   const objectnew2 = {
     userid: req.body.userid,
     password: req.body.password,
