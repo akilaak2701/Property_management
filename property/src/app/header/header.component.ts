@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ApiserviceService } from '../apiservice.service';
 
 @Component({
@@ -6,15 +6,14 @@ import { ApiserviceService } from '../apiservice.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent  {
 public searchTerm :string ='';
   ApiserviceService: any;
   constructor(private api: ApiserviceService ) { 
     
   }
 
-  ngOnInit(): void {
-  }
+
   search(event: any) {
       this.searchTerm = (event.target as HTMLInputElement).value;
       console.log(this.searchTerm);
