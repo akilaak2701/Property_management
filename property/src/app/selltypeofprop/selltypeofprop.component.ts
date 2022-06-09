@@ -1,16 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-selltypeofprop',
   templateUrl: './selltypeofprop.component.html',
   styleUrls: ['./selltypeofprop.component.css']
 })
-export class SelltypeofpropComponent implements OnInit {
+export class SelltypeofpropComponent {
 
-  constructor() { console.log("property");
-}
-
-  ngOnInit(): void {console.log("property");
-  }
+ 
 
 }

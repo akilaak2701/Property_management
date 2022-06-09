@@ -54,43 +54,45 @@ app.post("/signup", function(request,_response){
   });
   //------------login (GET)------------
   
-  // app.get('/getlogin/:id',(req,res)=>{
-  //  console.log("email:",req.params.id);
-  //  const object = {
-  //    selector:{
-  //      email:req.params.id,
-  //      type :"login"
-  //    }
-  //  }
-  
-  //  dbconnection.testDb.find(object).then((data)=>{
-  //    console.log("data fetch from Database",data);
-  //    res.send(data);
-  //  }).catch((err=>{
-  //    console.log("error",err);
-  //  })
-  //  )
-  // });
+  app.get('/getlogin/:id',(req,res)=>{
+   console.log("email:",req.params.id);
+   const object = {
+     selector:{
+       email:req.params.id,
+       type :"login"
+     }
+   }
+dbconnection.testDb.find(object).then((data)=>{
+     console.log("data fetch from Database",data);
+     res.send(data);
+   })
+   .catch((err)=>{
+     console.log("error",err);
+     res.status(400).send({
+       message: err,
+      });
+     });
+   });
  
-  //   app.get('/getadminlogin/:id',(req,res)=>{
-  //  console.log("userid:",req.params.id);
-  //  const object1 = {
-  //    selector:{
-  //     userid:req.params.id,
-  //      type :"admin"
-  //    }
-  //  }
-   
-  
-  
-  //  dbconnection.testDb.find(object1).then((data)=>{
-  //    console.log("data fetch from Database",data);
-  //    res.send(data);
-  //  }).catch((err=>{
-  //    console.log("error",err);
-  //  })
-  //  )
-  // });
+app.get('/getadminlogin/:id',(req,res)=>{
+   console.log("userid:",req.params.id);
+   const object1 = {
+     selector:{
+      userid:req.params.id,
+       type :"admin"
+     }
+   }
+dbconnection.testDb.find(object1).then((data)=>{
+     console.log("data fetch from Database",data);
+     res.send(data);
+   })
+     .catch((err) => {
+      console.log('error', err);
+      res.status(400).send({
+        message: err,
+      });
+      });
+    });
  
 
 app.listen(port, (err) => {

@@ -14,7 +14,6 @@ public searchTerm :string ='';
   }
 
   ngOnInit(): void {
-    console.log("sonar");
   }
   search(event: any) {
       this.searchTerm = (event.target as HTMLInputElement).value;

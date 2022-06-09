@@ -21,7 +21,6 @@ this.saving()
  }
 
  ngOnInit(): void {
-   console.log("sonar");
  }
    
  saving() {
