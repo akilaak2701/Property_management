@@ -64,11 +64,13 @@ body {
   font-weight: 500;
   color: #0d0d0d;
   margin-bottom: 1.5rem;
+  padding-left: 70px;
+
 }
 
 .card-text {
-  font-size: 10px;
-
+  font-size:20px ;
+  padding-left: 70px;
   color: #3d3d3d;
   margin-bottom: 2.5rem;
 }
@@ -101,20 +103,9 @@ a:hover, a:active {
   color: white;
 }
 
-.card-text {
-  font-size:20px ;
-  padding-left: 70px;
-}
-.card-header{
-  font-weight: bolder;
-  padding-left: 70px;
 
-  /* text-transform: capitalize */
-}
+
 button{
-  background-color: goldenrod; /* Green */
-  border: none;
-  color: white;
   padding: 16px 28px;
   padding-left: 60px;
   text-align: center;

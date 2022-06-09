@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectposttypeComponent implements OnInit {
 
-  constructor() { }
+  constructor() { console.log("property");}
 
-  ngOnInit(): void {
+  ngOnInit(): void {console.log("property");
   }
 
 }

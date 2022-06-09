@@ -46,14 +46,14 @@ section {
     font-size: 20px;
     padding: 16px 0;
     border-bottom: 1px solid goldenrod;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    margin: 13px 20px;
     width: 80%;
     display: inline-block;
     background-color:transparent;
      border-radius: .5rem;
      border: 2px solid #222 ;
      /* box-shadow: 1px 3px 5px  black; */
-     margin: 13px 0;
 
 
   }

@@ -16,15 +16,6 @@ export class ViewComponent implements OnInit {
     this.acrouter.queryParams.subscribe(res=>{
       this.sample =  this.temp=res
     })
-  //   this.api.getByTypedUser("property",this.temp).subscribe(res=>{
-  //     console.log(res);
-  //      this.temp=res
-  //      this.sample=this.temp.docs
-  //      console.log(this.sample)
-  //     alert("success")
-  //   },rej=>{
-  //     alert("failed"+rej)
-  //   })
   }
 
 }

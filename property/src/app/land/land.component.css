@@ -113,8 +113,6 @@ a:hover, a:active {
 }
 button{
   background-color: goldenrod; /* Green */
-  border: none;
-  color: white;
   padding: 16px 28px;
   padding-left: 60px;
   text-align: center;
